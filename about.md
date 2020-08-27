@@ -10,7 +10,7 @@ I’m just a tech guy with a crazy two-year-old girl that won't fall asleep at n
 
 I can carry on an in-depth conversation how the isekai genre has taken over anime, how Savage Hulk was denied a proper redemptive arc in Endgame, and how there's no feeling in the world like being in the arena of a college basketball game when your team takes down a top 5 squad with equal felicity. 
 
-In my free time, I also have the occation to game. My game setup has bloated to require three different types of switcher (four HDMI, one  SCART, and two Extron matrix switchers) and two HDMI splitters to hook everything up. My work desk skulks in one corner of the room, crisscrossed with wires from two monitors, two PVMs, a scan converter, a DAC, and an RGB to YPbPr modulator. 
+In my free time, I also have the occasion to game. My game setup has bloated to require three different types of switcher (four HDMI, one  SCART, and two Extron matrix switchers) and two HDMI splitters to hook everything up. My work desk skulks in one corner of the room, crisscrossed with wires from two monitors, two PVMs, a scan converter, a DAC, and an RGB to YPbPr modulator. 
 
 I appreciate technology some would find dated. I recently drove forty miles to buy a JVC D-series CRT that rolled off the assembly line in August of 2000, and I was happy to get it. In fairness, the woman selling it was happy, too. It was large and heavy, and belonged to her ex husband.
 
