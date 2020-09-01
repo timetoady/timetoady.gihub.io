@@ -5,16 +5,13 @@ title: Functions, Objects, and Arrays---Know the F.O.A.
 Welcome back to Adam of Blog. In this week’s episode, we will:
 
 [Examine functions in JavaScript, including callbacks and promises](#functions)
-
 [Look at JavaScript objects, and how to loop through them](#objects)
-
 [Dive into arrays, and a couple ways to loop through them, and:](#arrays)
-
 [Bonus learning!](#bonus)
 
 
 
-## JavaScript functions: in brief
+## JavaScript functions: in brief~~s~~
 
 <a name="functions"></a>
 
@@ -29,7 +26,6 @@ function myFunction (parameter1, parameter2) {
 let definedVariable = “Definition of first variable”
 let definedVariable2 = “and the second one.”
 return definedVariable1.concat(‘ ‘,  definedVariable2)
-
 }
 ```
 
