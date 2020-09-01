@@ -2,7 +2,10 @@
 layout: post
 title: Functions, Objects, and Arrays---Know the F.O.A.
 ---
-Welcome back to Adam of Blog. In this week’s episode, we will:
+Learn a little about an how functions function, if objects object, and how arrays are arrayed.
+
+
+#### Welcome back to Adam of Blog. In this week’s episode, we will:
 
 
   *[Examine functions in JavaScript, including callbacks and promises](#functions)  
