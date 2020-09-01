@@ -14,10 +14,10 @@ Learn a little about an how functions function, if objects object, and how array
 * ## [Bonus learning!](#bonus)  
 
 
+<a name="functions"></a>
+
 
 ## JavaScript functions: ~~in briefs~~ briefly
-
-<a name="functions"></a>
 
 Functions are where most of the thinking goes on in the script of JavaScript. They are composed of a list of statements, calculations, or tasks that perform the logic needed to contribute to a site or app. To think of them metaphorically, they are sort of like the verbs and order of an English sentence (with objects, arrays, and variables being sort of like nouns), or like the chamber, barrel, and mechanisms of gun that fires those object bullets. 
 
