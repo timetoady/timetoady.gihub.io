@@ -24,7 +24,7 @@ Functions can be named or unnamed (in the case of arrow functions), can take zer
 
 Take the following example:
 
-```
+```javascript
 function myFunction (parameter1, parameter2) {
 let definedVariable = “Definition of first variable”
 let definedVariable2 = “and the second one.”
@@ -44,7 +44,7 @@ This way you can break up tasks into smaller functions, and call them in the lar
 
 Example:
 
-```
+```javascript
 function anotherFunction (callbackFunc) {
 let definedVariable3 = “Now, I can add this third variable as a string to the other two in this new function by calling the myFunction again.”
 return callbackFunc.concat(‘ ‘, definedVariable3)
@@ -62,7 +62,7 @@ One of the more common asynchronous functions in modern JavaScript is a `Promise
 
 You can even chain them with the `then()` method, waiting on each phase of the code to be completed before moving on to the next one.  Here’s a basic example (using arrow functions to keep things short):
 
-```
+```javascript
 attemptAction()
 .then(answer => anotherAction(answer)) //these arrow functions are returning results, 
 .then(answer2 => thirdAction(answer2))//but they don’t need the ‘return’ keyword.
@@ -84,7 +84,7 @@ Objects can be initialized by the object's name being defined in a variable, and
 
 Here’s an example of how it would look for my real world car:
 
-```
+```javascript
 var adamsCar = {
 	make:  ‘Subaru’,
 	model:  ‘SVX’,
@@ -103,7 +103,7 @@ Objects can also exist within a function that you can call to spit out new objec
 
 Like-a so:
 
-```
+```javascript
 function carMaker (make, model, year, color) {
 	return {
 		make: make,
@@ -124,7 +124,7 @@ The values in objects don’t just have to be simple strings or numbers. They ca
 
 For example, if you wanted to return all key/value pairs of my car, you could write:
 
-```
+```javascript
 for (const key in myCar) {
 return `${key} is ${key[myCar]}`
 }
@@ -155,7 +155,7 @@ The methods of altering arrays are different, too. They also use dot syntax, and
 
 For example, if I wanted to add an item to the middle of my wife’s shopping list, hoping she won’t notice, I might use `splice()` thusly:
 
-```
+```javascript
 wifeShoppingList = [‘Bread’, ‘eggs’, ‘chips’, ‘broccoli’, ‘kidney beans’, ‘blueberries’, ‘diced tomatoes’];
 wifeShoppingList.splice(3, 0, ‘gushers, family size’);
 ``` 
