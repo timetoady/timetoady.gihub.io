@@ -9,9 +9,9 @@ Learn a little about an how functions function, if objects object, and how array
 
 
   *[Examine functions in JavaScript, including callbacks and promises](#functions)  
-  *[Look at JavaScript objects, and how to loop through them](#objects)  
-  *[Dive into arrays, and a couple ways to loop through them, and:](#arrays)  
-  *[Bonus learning!](#bonus)  
+ # +[Look at JavaScript objects, and how to loop through them](#objects)  
+  -[Dive into arrays, and a couple ways to loop through them, and:](#arrays)
+  [Bonus learning!](#bonus)  
 
 
 
