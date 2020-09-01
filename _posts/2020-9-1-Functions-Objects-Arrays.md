@@ -24,9 +24,9 @@ Take the following example:
 
 ```javascript
 function myFunction (parameter1, parameter2) {
-let definedVariable = “Definition of first variable”
-let definedVariable2 = “and the second one.”
-return definedVariable1.concat(‘ ‘,  definedVariable2)
+    let definedVariable = “Definition of first variable”
+    let definedVariable2 = “and the second one.”
+    return definedVariable1.concat(‘ ‘,  definedVariable2)
 }
 ```
 
@@ -43,8 +43,8 @@ Example:
 
 ```javascript
 function anotherFunction (callbackFunc) {
-let definedVariable3 = “Now, I can add this third variable as a string to the other two in this new function by calling the myFunction again.”
-return callbackFunc.concat(‘ ‘, definedVariable3)
+    let definedVariable3 = “Now, I can add this third variable as a string to the other two in this new function by calling the myFunction again.”
+    return callbackFunc.concat(‘ ‘, definedVariable3)
 }
 
 anotherFunction(myFunction) //Here, I have used the first “myFunction” as a callback inside of the “anotherFunction” function.
@@ -123,7 +123,7 @@ For example, if you wanted to return all key/value pairs of my car, you could wr
 
 ```javascript
 for (const key in myCar) {
-return `${key} is ${key[myCar]}`
+    return `${key} is ${key[myCar]}`
 }
 
 //Expected output:
