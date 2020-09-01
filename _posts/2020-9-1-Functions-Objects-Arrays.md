@@ -2,7 +2,7 @@
 layout: post
 title: Functions, Objects, and Arrays---Know the F.O.A.
 ---
-Learn a little about an how functions function, if objects object, and how arrays are arrayed.
+Learn a little about an how functions function, if objects object, and how arrays are arrayed in JavaScript.
 
 
 #### Welcome back to Adam of Blog. In this week’s episode, we will:
