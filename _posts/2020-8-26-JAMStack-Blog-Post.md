@@ -5,7 +5,7 @@ title: JAMStack Blog Post
 
 ## What is JAMStack, and is it Delicious?
 
-![Bottle-of-Jam](https://images.unsplash.com/photo-1550065273-640cb621fdbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)
+![alt text](https://images.unsplash.com/photo-1550065273-640cb621fdbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80 "Bottle of Jam")
 
 JavaScript, APIs, and Markup make the JAM of JAMStack, and are in essence a workflow for front-end, static-site web development. 
 
