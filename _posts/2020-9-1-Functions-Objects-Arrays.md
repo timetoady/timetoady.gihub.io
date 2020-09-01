@@ -6,7 +6,7 @@ Welcome back to Adam of Blog. In this week’s episode, we will:
 
 [Examine functions in JavaScript, including callbacks and promises](#functions)
 
-[Look at javascript objects, and how to loop through them](#objects)
+[Look at JavaScript objects, and how to loop through them](#objects)
 
 [Dive into arrays, and a couple ways to loop through them, and:](#arrays)
 
@@ -72,10 +72,9 @@ attemptAction()
 Other nifty, related items include [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statements and the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
 
+<a name="objects"></a>
 
 ## JavaScript Objects: objectively objects, without objection
-
-<a name="objects"></a>
 
 Technically, since JavaScript is an object-oriented language, nearly everything you work with using it is an ‘object.’ So if the English language usage of the word “object” weren’t confusing enough for you, there is also something in JavaScript specifically referred to as “a JavaScript object” that has particular properties separate from other object types.
 
@@ -140,10 +139,9 @@ return `${key} is ${key[myCar]}`
 // engine is 3.3 liter ‘boxer’ flat-six
 ```
 
+<a name="arrays"></a>
 
 ## Arrays, in all their glory
-
-<a name="arrays"></a>
 
 Once you know objects, arrays aren’t a far precipice to leap to.
 
@@ -170,10 +168,10 @@ The order in which entries appear in an array matter, and are accessible via the
 
 And that’s all I have to say... about that.
 
+<a name="bonus"></a>
 
 
 ## Bonus
 
-<a name="bonus"></a>
 Want a quick way to know all the properties/keys of an object? You can make an array of them using the method `object.getOwnPropertyNames()`. If all you need are the keys, it might save you some time in having to make a `for...in` loop to scoop them all out.
 
