@@ -4,7 +4,6 @@ title: About Adam Andreason
 permalink: /about/
 ---
 
-### What I'm About
 
 I’m just a tech guy with a crazy two-year-old girl that won't fall asleep at night until I play a certain playlist of songs from Chrono Trigger. She calls it "Twigga bedtime."
 
@@ -18,7 +17,7 @@ I appreciate technology some would find dated. I recently drove forty miles to b
 
 ### My Coding Chops
 
-Vanilla JavaScript is where I've done most of my work, but CSS and HTML are close frenemies. Massaging logic to make functions work beautifully, sussing out the right combination to get a process rolling—I love that part of web development, and I hope to use this class polish all my scripting so I can write better planned, more elegant code.
+JavaScript is where I've done most of my work, but CSS and HTML are close frenemies. Massaging logic to make functions work beautifully, sussing out the right combination to get a process rolling—I love that part of web development, and I hope to use this class polish all my scripting so I can write better planned, more elegant code.
 
 ### Contact me
 
