@@ -5,10 +5,10 @@ title: Functions, Objects, and Arrays---Know the F.O.A.
 Welcome back to Adam of Blog. In this week’s episode, we will:
 
 
-..*[Examine functions in JavaScript, including callbacks and promises](#functions)
-..*[Look at JavaScript objects, and how to loop through them](#objects)
-..*[Dive into arrays, and a couple ways to loop through them, and:](#arrays)
-..*[Bonus learning!](#bonus)
+⋅⋅*[Examine functions in JavaScript, including callbacks and promises](#functions)
+⋅⋅*[Look at JavaScript objects, and how to loop through them](#objects)
+⋅⋅*[Dive into arrays, and a couple ways to loop through them, and:](#arrays)
+⋅⋅*[Bonus learning!](#bonus)
 
 
 
