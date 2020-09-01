@@ -6,11 +6,12 @@ Welcome back to Adam of Blog. In this week’s episode, we will:
 
 [Examine functions in JavaScript, including callbacks and promises](#functions)
 
-[Look at javascript objects, and how to loop through them] (#objects)
+[Look at javascript objects, and how to loop through them](#objects)
 
 [Dive into arrays, and a couple ways to loop through them, and:](#arrays)
 
 [Bonus learning!](#bonus)
+
 
 
 ## JavaScript functions: in brief
@@ -34,6 +35,7 @@ return definedVariable1.concat(‘ ‘,  definedVariable2)
 
 Here, I’ve taken two parameters, but just to show you where they go: they aren’t actually being used in this example function. For my statements, I then define two variables whose scope is contained within the function, and then return (give the result of the function as) the two being added or 'concatenated' together. Calling the function should return the complete sentence, with a space between.
 
+
 ### Callback function: 
 
 Another common use of a function is a callback function, or a function that is passed in another function as an argument. As the function processes, the callback is called (or “invoked”) inside the function it has been placed in. 
@@ -53,6 +55,7 @@ anotherFunction(myFunction) //Here, I have used the first “myFunction” as a 
 
 Callbacks are primarily used in two ways. Either 1) synchronously, or where information is processed in order it is called instantly, or 2) asynchronously, where two or more processes of your script are not functioning in direct chronological order of what’s written, but are related actions occurring without waiting for the action occurring before it to complete. 
 
+
 ### Promises (no pinky swears required)
 
 One of the more common asynchronous functions in modern JavaScript is a `Promise`. It’s essentially a type of callback, plus more. MDN defines it very succinctly as “an object representing the eventual completion or failure of an asynchronous operation.”  This means that you can set up parts of code to wait to see if a prior process important to your task succeeds or fails, and act accordingly, and only act after this prior process is completed.
@@ -66,7 +69,8 @@ attemptAction()
 .catch(ifAllFails) //used if all attempted conditions fail to launch another callback function
 ```
 
-Other nifty, related items include [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statements and the [Fetch API] (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+Other nifty, related items include [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statements and the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
 
 
 ## JavaScript Objects: objectively objects, without objection
@@ -92,7 +96,7 @@ var adamsCar = {
 }
 ```
 
-With an object established in this method, you can now access its properties, either using dot notation (`adamsCar.year` will return “1992) or bracket notation (`adamsCar[“needs a paint job’] returns you the boolean ‘true’, and unfortunately, it is.)  
+With an object established in this method, you can now access its properties, either using dot notation (`adamsCar.year` will return “1992) or bracket notation (`adamsCar[“needs a paint job`] returns you the boolean ‘true’, and unfortunately, it is.)  
 
 Once you’ve got these details of your object lined up, they are by no means set. You can alter the values (`adamsCar.color = “Silver-ish”`) or add new key/value pairs (`adamsCar.engine = “3.3 liter ‘boxer’ flat-six”`). Both operations can use either notation type. 
 
@@ -115,7 +119,9 @@ let newCar = carMaker(“Honda”, “Civic EX”, 1995, “Gray”, “coupe”
 //This is my wife’s car. It’s actually a cool car!
 ```
 
-Add to that, the values in objects don’t just have to be simple strings or numbers. They can contain variables, functions, arrays, and even other objects, and can be called on and parsed accordingly. You can also loop through them by using a special [`for...in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) loop, but also using the [`forEach()`] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) method.
+### What objects can contain
+
+The values in objects don’t just have to be simple strings or numbers. They can contain variables, functions, arrays, and even other objects, and can be called on and parsed accordingly. You can also loop through them by using a special [`for...in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) loop, but also using the [`forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) method.
 
 For example, if you wanted to return all key/value pairs of my car, you could write:
 
@@ -133,7 +139,6 @@ return `${key} is ${key[myCar]}`
 // needs a paint job is true
 // engine is 3.3 liter ‘boxer’ flat-six
 ```
-
 
 
 ## Arrays, in all their glory
@@ -165,9 +170,10 @@ The order in which entries appear in an array matter, and are accessible via the
 
 And that’s all I have to say... about that.
 
-<a name="bonus"></a>
+
 
 ## Bonus
 
+<a name="bonus"></a>
 Want a quick way to know all the properties/keys of an object? You can make an array of them using the method `object.getOwnPropertyNames()`. If all you need are the keys, it might save you some time in having to make a `for...in` loop to scoop them all out.
 
