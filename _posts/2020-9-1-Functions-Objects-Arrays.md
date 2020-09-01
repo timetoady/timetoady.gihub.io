@@ -92,7 +92,7 @@ var adamsCar = {
 }
 ```
 
-With an object established in this method, you can now access its properties, either using dot notation (`adamsCar.year` will return “1992) or bracket notation (`adamsCar[“needs a paint job`] returns you the boolean ‘true’, and unfortunately, it is.)  
+With an object established in this method, you can now access its properties, either using dot notation (`adamsCar.year` will return “1992) or bracket notation (`adamsCar[“needs a paint job"`] returns you the boolean ‘true’, and unfortunately, it is.)  
 
 Once you’ve got these details of your object lined up, they are by no means set. You can alter the values (`adamsCar.color = “Silver-ish”`) or add new key/value pairs (`adamsCar.engine = “3.3 liter ‘boxer’ flat-six”`). Both operations can use either notation type. 
 
