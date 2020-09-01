@@ -12,7 +12,7 @@ Welcome back to Adam of Blog. In this week’s episode, we will:
 
 
 
-## JavaScript functions: in brief~~s~~
+## JavaScript functions: ~~in briefs~~ briefly
 
 <a name="functions"></a>
 
