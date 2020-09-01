@@ -33,7 +33,7 @@ function myFunction (parameter1, parameter2) {
 Here, I’ve taken two parameters, but just to show you where they go: they aren’t actually being used in this example function. For my statements, I then define two variables whose scope is contained within the function, and then return (give the result of the function as) the two being added or 'concatenated' together. Calling the function should return the complete sentence, with a space between.
 
 
-### Callback function: 
+### Callback functions 
 
 Another common use of a function is a callback function, or a function that is passed in another function as an argument. As the function processes, the callback is called (or “invoked”) inside the function it has been placed in. 
 
@@ -53,7 +53,7 @@ anotherFunction(myFunction) //Here, I have used the first “myFunction” as a 
 Callbacks are primarily used in two ways. Either 1) synchronously, or where information is processed in order it is called instantly, or 2) asynchronously, where two or more processes of your script are not functioning in direct chronological order of what’s written, but are related actions occurring without waiting for the action occurring before it to complete. 
 
 
-### Promises (no pinky swears required)
+### Promises (no pinkies required)
 
 One of the more common asynchronous functions in modern JavaScript is a `Promise`. It’s essentially a type of callback, plus more. MDN defines it very succinctly as “an object representing the eventual completion or failure of an asynchronous operation.”  This means that you can set up parts of code to wait to see if a prior process important to your task succeeds or fails, and act accordingly, and only act after this prior process is completed.
 
@@ -66,7 +66,7 @@ attemptAction()
 .catch(ifAllFails) //used if all attempted conditions fail to launch another callback function
 ```
 
-Other nifty, related items include [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statements and the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+Other nifty, related items include [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statements and the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
 
 <a name="objects"></a>
@@ -92,7 +92,7 @@ var adamsCar = {
 }
 ```
 
-With an object established in this method, you can now access its properties, either using dot notation (`adamsCar.year` will return “1992) or bracket notation (`adamsCar[“needs a paint job"`] returns you the boolean ‘true’, and unfortunately, it is.)  
+With an object established in this method, you can now access its properties, either using dot notation (`adamsCar.year` will return “1992) or bracket notation (`adamsCar[“needs a paint job"]` returns you the boolean ‘true’, and unfortunately, it is.)  
 
 Once you’ve got these details of your object lined up, they are by no means set. You can alter the values (`adamsCar.color = “Silver-ish”`) or add new key/value pairs (`adamsCar.engine = “3.3 liter ‘boxer’ flat-six”`). Both operations can use either notation type. 
 
@@ -138,7 +138,7 @@ for (const key in myCar) {
 
 <a name="arrays"></a>
 
-## Arrays, in all their glory
+## Arrays in all their glory
 
 Once you know objects, arrays aren’t a far precipice to leap to.
 
@@ -156,6 +156,8 @@ For example, if I wanted to add an item to the middle of my wife’s shopping li
 wifeShoppingList = [‘Bread’, ‘eggs’, ‘chips’, ‘broccoli’, ‘kidney beans’, ‘blueberries’, ‘diced tomatoes’];
 wifeShoppingList.splice(3, 0, ‘gushers, family size’);
 ``` 
+
+Yup, right between the broccoli and the kidney beans. She'll never notice it there. Right?
 
 Arrays accept all these methods [and more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) to read, manipulate, and copy the information you need.
 
