@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Functions, Objects, and Arrays: Know the F.O.A.
+title: Functions, Objects, and Arrays---Know the F.O.A.
 ---
-
-Functions, Objects, and Arrays: Know the F.O.A.
-
 Welcome back to Adam of Blog. In this week’s episode, we will:
 
-Examine functions in JavaScript, including callbacks and promises
-Look at JavaScript objects, and how to loop through them
-Dive into arrays, and a couple ways to loop through them, and:
-Bonus learning!
+[Examine functions in JavaScript, including callbacks and promises][JavaScript function: in brief]
+
+[Look at javascript objects, and how to loop through them][JavaScript Objects: objectively objects, without objection]
+
+[Dive into arrays, and a couple ways to loop through them, and:][Arrays, in all their glory]
+
+[Bonus learning!][Bonus]
 
 ### JavaScript function: in brief
 
@@ -129,13 +129,24 @@ Once you know objects, arrays aren’t a far precipice to leap onto.
 
 Arrays are list-like objects in JavaScript, and also possess a lot of the same properties as JavaScript objects. Can contain numbers, strings, functions, and other arrays? Check. Can loop through using the `forEach()` method or a ‘for’ loop? Indeedy-do.  Accessible using bracket notation? Absolutely. For example, if I wanted to know what the 5th item on an array was, I could find it by referencing `myArray[4]` (remember they start from zero).  
 
-But take careful note: dot notation can only access the properties of an array as an object (like `array.length` to return the length of the array, or `array.indexOf(‘This item’)` to find the index of the item you specify) and not in the same way as a “JavaScript object.”
+But take note: dot notation can only access the properties of an array as an object (like `array.length` to return the length of the array, or `array.indexOf(‘This item’)` to find the index of the item you specify) and not in the same way as a “JavaScript object.”
 
-The methods of altering arrays are different, too. They also use dot syntax, and offer methods to add/remove new items to the end (via `myArray.push(“New item”)` and `myArray.pop()`, respectively) the beginning (via `myArray.unshift()’ and `myArray.shift(“Another new item”`, respectively) and in any specified index in the array using `splice()`.
+The methods of altering arrays are different, too. They also use dot syntax, and offer methods to add/remove new items to the end (via `myArray.push(“New item”)` and `myArray.pop()`, respectively) the beginning (via `myArray.unshift()’ and `myArray.shift(“Another new item”`, respectively) and in any specified index in the array using [`splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice).
 
 For example, if I wanted to add an item to the middle of my wife’s shopping list, hoping she won’t notice, I might use `splice()` thusly:
 
 ```
-wifeShoppingList = [Bread, eggs, chips, 
+wifeShoppingList = [‘Bread’, ‘eggs’, ‘chips’, ‘broccoli’, ‘kidney beans’, ‘blueberries’, ‘diced tomatoes’];
+wifeShoppingList.splice(3, 0, ‘gushers, family size’);
 ``` 
 
+Arrays accept all these methods [and more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) to read, manipulate, and copy the information you need. 
+
+Finally, the order in which entries appear in an array matter, and are accessible via the bracket notation (i.e. `myArray[12]` for the 13th entry) but this is not necessarily the case for objects in practical usage. Objects <em>may</em> be ordered, but since they function more like dictionaries where you use keys to look up values, they may <em>not</em> be, too.
+
+And that’s all I have to say about that.
+
+
+### Bonus
+
+Want a quick way to know all the properties/keys of an object? You can make an array of them using the method `object.getOwnPropertyNames()`. If all you need are the keys, it might save you some time in having to make a `for...in` loop to scoop them all out.
