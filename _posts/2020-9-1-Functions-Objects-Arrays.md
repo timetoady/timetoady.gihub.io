@@ -4,15 +4,18 @@ title: Functions, Objects, and Arrays---Know the F.O.A.
 ---
 Welcome back to Adam of Blog. In this week’s episode, we will:
 
-[Examine functions in JavaScript, including callbacks and promises][JavaScript function: in brief]
+[Examine functions in JavaScript, including callbacks and promises](#functions)
 
-[Look at javascript objects, and how to loop through them][JavaScript Objects: objectively objects, without objection]
+[Look at javascript objects, and how to loop through them] (#objects)
 
-[Dive into arrays, and a couple ways to loop through them, and:][Arrays, in all their glory]
+[Dive into arrays, and a couple ways to loop through them, and:](#arrays)
 
-[Bonus learning!][Bonus]
+[Bonus learning!](#bonus)
 
-### JavaScript functions: in brief
+
+## JavaScript functions: in brief
+
+<a name="functions"></a>
 
 Functions are where most of the thinking goes on in the script of JavaScript. They are composed of a list of statements, calculations, or tasks that perform the logic needed to contribute to a site or app. To think of them metaphorically, they are sort of like the verbs and order of an English sentence (with objects, arrays, and variables being sort of like nouns), or like the chamber, barrel, and mechanisms of gun that fires those object bullets. 
 
@@ -31,7 +34,7 @@ return definedVariable1.concat(‘ ‘,  definedVariable2)
 
 Here, I’ve taken two parameters, but just to show you where they go: they aren’t actually being used in this example function. For my statements, I then define two variables whose scope is contained within the function, and then return (give the result of the function as) the two being added or 'concatenated' together. Calling the function should return the complete sentence, with a space between.
 
-## Callback function: 
+### Callback function: 
 
 Another common use of a function is a callback function, or a function that is passed in another function as an argument. As the function processes, the callback is called (or “invoked”) inside the function it has been placed in. 
 
@@ -50,7 +53,7 @@ anotherFunction(myFunction) //Here, I have used the first “myFunction” as a 
 
 Callbacks are primarily used in two ways. Either 1) synchronously, or where information is processed in order it is called instantly, or 2) asynchronously, where two or more processes of your script are not functioning in direct chronological order of what’s written, but are related actions occurring without waiting for the action occurring before it to complete. 
 
-## Promises (no pinky swears required)
+### Promises (no pinky swears required)
 
 One of the more common asynchronous functions in modern JavaScript is a `Promise`. It’s essentially a type of callback, plus more. MDN defines it very succinctly as “an object representing the eventual completion or failure of an asynchronous operation.”  This means that you can set up parts of code to wait to see if a prior process important to your task succeeds or fails, and act accordingly, and only act after this prior process is completed.
 
@@ -65,7 +68,10 @@ attemptAction()
 
 Other nifty, related items include [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) statements and the [Fetch API] (https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
-### JavaScript Objects: objectively objects, without objection
+
+## JavaScript Objects: objectively objects, without objection
+
+<a name="objects"></a>
 
 Technically, since JavaScript is an object-oriented language, nearly everything you work with using it is an ‘object.’ So if the English language usage of the word “object” weren’t confusing enough for you, there is also something in JavaScript specifically referred to as “a JavaScript object” that has particular properties separate from other object types.
 
@@ -128,7 +134,11 @@ return `${key} is ${key[myCar]}`
 // engine is 3.3 liter ‘boxer’ flat-six
 ```
 
-### Arrays, in all their glory
+
+
+## Arrays, in all their glory
+
+<a name="arrays"></a>
 
 Once you know objects, arrays aren’t a far precipice to leap to.
 
@@ -136,7 +146,7 @@ Arrays are list-like objects in JavaScript, and also possess a lot of the same p
 
 But take note: dot notation can only access the properties of an array as an object (like `array.length` to return the length of the array, or `array.indexOf(‘This item’)` to find the index of the item you specify) and not values in the same way as a “JavaScript object.”
 
-## Altering arrays
+### Altering arrays
 
 The methods of altering arrays are different, too. They also use dot syntax, and offer methods to add/remove new items to the end (via `myArray.push(“New item”)` and `myArray.pop()`, respectively) the beginning (via `myArray.unshift()` and `myArray.shift(“Another new item”`, respectively) and in any specified index in the array using [`splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice).
 
@@ -149,14 +159,15 @@ wifeShoppingList.splice(3, 0, ‘gushers, family size’);
 
 Arrays accept all these methods [and more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) to read, manipulate, and copy the information you need.
 
-## A last note on arrays vs objects
+### A last note on arrays vs objects
 
 The order in which entries appear in an array matter, and are accessible via the bracket notation (i.e. `myArray[12]` for the 13th entry) but this is not necessarily the case for objects in practical usage. Objects <em>may</em> be ordered, but since they function more like dictionaries where you use keys to look up values, they may <em>not</em> be, too. Generally, it's safer to avoid relying on how the key/value pairs are ordered in your processes.
 
 And that’s all I have to say... about that.
 
+<a name="bonus"></a>
 
-### Bonus
+## Bonus
 
 Want a quick way to know all the properties/keys of an object? You can make an array of them using the method `object.getOwnPropertyNames()`. If all you need are the keys, it might save you some time in having to make a `for...in` loop to scoop them all out.
 
