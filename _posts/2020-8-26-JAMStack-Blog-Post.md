@@ -2,7 +2,6 @@
 layout: post
 title: JAMStack Blog Post
 ---
-
 #### What is JAMStack, and is it delicious?
 
 ![Bottle of Jam](https://images.unsplash.com/photo-1550065273-640cb621fdbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80)

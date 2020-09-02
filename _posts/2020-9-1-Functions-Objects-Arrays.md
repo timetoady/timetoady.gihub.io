@@ -29,7 +29,7 @@ Take the following example:
 function myFunction (parameter1, parameter2) {
     let definedVariable = “Definition of first variable”
     let definedVariable2 = “and the second one.”
-    return definedVariable1.concat(‘ ‘,  definedVariable2)
+    return definedVariable1.concat(‘ ‘,  definedVariable2) 
 }
 ```
 
@@ -78,7 +78,7 @@ Other nifty, related items include [try...catch](https://developer.mozilla.org/e
 
 Technically, since JavaScript is an object-oriented language, nearly everything you work with using it is an ‘object.’ So if the English language usage of the word “object” weren’t confusing enough for you, there is also something in JavaScript specifically referred to as “a JavaScript object” that has particular properties separate from other object types.
 
-A helpful way to start thinking of them is to compare them to real world objects. Cars, people, clients, documents, and more all have details about them that their name alone does not convey. In their simplest form, objects are basically a list of those details, organized by key (like “client_name”) and value (“Alexander Maxamillian”) pairs. 
+A helpful way to start thinking of them is to compare them to real world objects. Cars, people, clients, documents, and more all have details about them that their name alone does not convey. In their simplest form, objects are basically a list of those details, organized by key (like “client_name”) and value (“Alexander Maximilian) pairs. 
 
 Objects can be initialized by the object's name being defined in a variable, and the properties of that object following in curly braces, using colons and commas to separate key/value pairs.
 
@@ -95,7 +95,7 @@ var adamsCar = {
 }
 ```
 
-With an object established in this method, you can now access its properties, either using dot notation (`adamsCar.year` will return “1992) or bracket notation (`adamsCar[“needs a paint job"]` returns you the boolean ‘true’, and unfortunately, it is.)  
+With an object established in this method, you can now access its properties, either using dot notation (`adamsCar.year` will return “1992) or bracket notation (`adamsCar[“needs a paint job"]` returns you the Boolean ‘true’, and unfortunately, it is.)  
 
 Once you’ve got these details of your object lined up, they are by no means set. You can alter the values (`adamsCar.color = “Silver-ish”`) or add new key/value pairs (`adamsCar.engine = “3.3 liter ‘boxer’ flat-six”`). Both operations can use either notation type. 
 
