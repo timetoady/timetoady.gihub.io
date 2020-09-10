@@ -9,9 +9,10 @@ In this weeks topics, we repeat ourselves, contemplate invasion by aliens, and m
 * ### [An explanation on scope using metaphor, and closures](#scopes)  
 * ### [A brief tread into spread operators, and how they're handy](#spread)
 
+
 <a name="recursion"></a>
 
-## Recursion: That which repeats on itself
+## Recursion: that which repeats on itself
 
 For me, the trick to understanding the concept of recursion is greatly aided by first latching onto what it means to be "recursive." In general, if something is *recursive*, that means it's characterized by something repeating: something happening again and again.
 
@@ -73,6 +74,7 @@ As you might have guessed, creating those stacks with all that impending logic c
 But there are circumstances where being recursive is preferable. Mostly this occurs with iterative branching. If you have to iterate over something to sort it, or transverse over complex or nonlinear nodes of data, recursive is the logic of choice.
 
 
+
 <a name="scopes"></a>
 
 ## Scopes and Closures in JavaScript
@@ -106,6 +108,7 @@ Local objects are denoted by the use of curly braces ({}).
 However, when a function is defined within a function, it has access to the variables defined in the function it is nested in. The outer function "encloses" the inner one, and so this situation the inner function is called a **closure**. 
 
 Functions will always look for a variable at the most local scope first, and then in any functions they might be enclosed in. 
+
 
 
 <a name="spread"></a>
