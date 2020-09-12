@@ -85,7 +85,7 @@ Scope in JavaScript is the area or range in which an element has influence or is
 
 For example, a home invasion would be something in the scope of a local police officer or sheriff. An invasion of deadly insects, however, might be "too big" for him, and would scope up the local mayor or even the governor. A foreign military invasion would be in line to scope to a country's president. An alien invasion would scope to something more global, which for us is basically the United Nations, and might be one of the few things that might actually unite them. 
 
-The beat cop is going to be way out of his league with an alien invasion, and would (hopefully) immediately call his call his superiors for one of those, or insects, or armies. By the same token, the United Nations would be concerned about a military invasion, perhaps aware of deadly insects, but would not be overly concerned with the details of a home invasion, unless it was perpetrated by aliens. 
+The beat cop is going to be way out of his league with an alien invasion, and would (hopefully) immediately call his superiors for one of those, or insects, or armies. By the same token, the United Nations would be concerned about a military invasion, perhaps aware of deadly insects, but would not be overly concerned with the details of a home invasion, unless it was perpetrated by aliens. 
 
 Scope in JavaScript works basically the same. Details, data, and operations are limited in their reach so they can be taken care of properly by the right scale of functions, who will then pass up only whatever information is necessary and nothing more. 
 
@@ -133,7 +133,7 @@ cousins = [...cousinsDadsSide,...cousinsMomsSide];
 console.log(cousins); // Output: ['Joseph', 'Albert', 'Shelby' 'Jane', 'Justine', 'Alan']
 ```
 
-If you were to simply `push()` the two example arrays into a new array, you would end up with an array of arrays. Doing it in this way makes all the data cleanly accessable in one place.
+If you were to simply `push()` the two example arrays into a new array, you would end up with an array of arrays. Doing it in this way makes all the data cleanly accessible in one place.
 
 Spread operators also enable you to avoid mutating the original element. When you use spread syntax, you create a new object based on the old one(s), instead of a pointer that would effect the old object if the new one were mutated. You could also return your new object as mutated by applying some sort of filter or map to them, still without effecting the original(s).
 
