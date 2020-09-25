@@ -49,14 +49,14 @@ No, that would be the bugs.
 
 Once I got all of those basic functions working, and everything talking to each other, actual use of my app revealed:
 
-  *duplicate todo's were being allowed, and mapped over the old ones; 
-  *categories could be added as null or undefined,showing some code underthings to the user; 
-  *newly added categories weren't updating in drop down box; 
-  *new todos were being added in random order;
-  *adding a new todo was causing the Hide Complete button to reset/page reload;
-  *editing todos to over a certain length cut them off;
-  *initial data wasn't loading automatically just the first time;
-  *and more!
+  * duplicate todo's were being allowed, and mapped over the old ones; 
+  * categories could be added as null or undefined,showing some code underthings to the user; 
+  * newly added categories weren't updating in drop down box; 
+  * new todos were being added in random order;
+  * adding a new todo was causing the Hide Complete button to reset/page reload;
+  * editing todos to over a certain length cut them off;
+  * initial data wasn't loading automatically just the first time;
+  * and more!
 
 These... took some solving.
 
