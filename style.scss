@@ -108,7 +108,7 @@ strong, b {
 
 img {
   max-width: 100%;
-}
+  box-sizing: 1px 1px #777;
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
