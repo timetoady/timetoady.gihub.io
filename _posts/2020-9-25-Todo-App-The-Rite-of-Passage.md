@@ -2,7 +2,6 @@
 layout: post
 title: The Rite of Passage — The Todo App
 ---
-
 ###### To do it, to do it, to do it right, yeah?
 
 
@@ -14,7 +13,7 @@ And so I have.
 
 ## What's ado about todo: how it works
 
-![Todo App](images\todo1.png)
+![Todo App](/images\todo1.png)
 ###### *Here is my to-do app. You'll notice it is dark-themed. This is because I am a creature of the night, and dwell around screens in the 300 nits range.* 
 
 The basic design I was after in this case is not too revolutionary. A button to hide and show completed tasks, a drop down box to select or add a category, and an entry field complete with add button make up the top area. Logic ensures duplicate categories and to-dos cannot be added, and error messages will shake their fingers at you try. Below, an editable list of inputs in category uls, checkbox to complete on the left, red 'X'es on the right to delete. 
@@ -70,5 +69,5 @@ As well as the app in general turned out in the end, the way I chose to shuffle 
 
 I'd eject the "add" input, too. Instead: a slick list of the editable todos, with a little plus at the bottom that would add a new empty todo every time it were pressed. And when you typed something in the last one, it would also autopopulate an empty one beneath it. Still remove with an X and cross off with a box (although I'd make the boxes much bigger). To add some extra special sauce, I'd make todos movable in their list.
 
-![Mobile todo app](image/todoMobile.png)
+![Mobile todo app](/image/todoMobile.png)
 ###### *Nope, I did not forget to do some mobile styling.*
