@@ -69,5 +69,5 @@ As well as the app in general turned out in the end, the way I chose to shuffle 
 
 I'd eject the "add" input, too. Instead: a slick list of the editable todos, with a little plus at the bottom that would add a new empty todo every time it were pressed. And when you typed something in the last one, it would also autopopulate an empty one beneath it. Still remove with an X and cross off with a box (although I'd make the boxes much bigger). To add some extra special sauce, I'd make todos movable in their list.
 
-![Mobile todo app](/image/todoMobile.png)
-###### *Nope, I did not forget to do some mobile styling.*
+![Mobile todo app](/images/todoMobile.png)
+###### *No, I did not forget to do some mobile styling.*
