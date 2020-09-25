@@ -13,7 +13,7 @@ And so I have.
 
 ## What's ado about todo: how it works
 
-![Todo App](/images\todo1.png)
+![Todo App](/images/todo1.png)
 ###### *Here is my to-do app. You'll notice it is dark-themed. This is because I am a creature of the night, and dwell around screens in the 300 nits range.* 
 
 The basic design I was after in this case is not too revolutionary. A button to hide and show completed tasks, a drop down box to select or add a category, and an entry field complete with add button make up the top area. Logic ensures duplicate categories and to-dos cannot be added, and error messages will shake their fingers at you try. Below, an editable list of inputs in category uls, checkbox to complete on the left, red 'X'es on the right to delete. 
