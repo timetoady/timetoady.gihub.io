@@ -3,7 +3,7 @@ layout: post
 title: Advanced Function Concepts---Recursion, Scopes and Closures, and Spread Operators
 ---
 
-In this weeks topics, we repeat ourselves, contemplate invasion by aliens, and make punctuation dad jokes.
+#### In this weeks topics, we repeat ourselves, contemplate invasion by aliens, and make punctuation dad jokes.
 
 * ### [A deep dive into recursion: what it is, its structure, how it works, and when to use it](#recursion)  
 * ### [An explanation on scope using metaphor, and closures](#scopes)  

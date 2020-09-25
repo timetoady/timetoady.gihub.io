@@ -2,7 +2,7 @@
 layout: post
 title: The Rite of Passage — The Todo App
 ---
-###### To do it, to do it, to do it right, yeah?
+#### To do it, to do it, to do it right, yeah?
 
 
 When writer want to branch out into a new genre, they write a short story. When an artist wants to try a new style, they polish the basic technique. When a basketball player wants to add a new move to their arsenal, they study film, break it down, and practice repetition after repetition.
