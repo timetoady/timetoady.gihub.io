@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Function Concepts---Recursion, Scopes and Closures, and Spread Operators
+title: Advanced Function Concepts — Recursion, Scopes and Closures, and Spread Operators
 ---
 
 #### In this weeks topics, we repeat ourselves, contemplate invasion by aliens, and make punctuation dad jokes.
