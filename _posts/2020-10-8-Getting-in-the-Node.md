@@ -5,8 +5,7 @@ title: Getting in the Node — Node.js, Express, and Template Engines
 #### What they are, when they are used, and who uses them
 
 
-Introductory paragraph
-Approx 2.3 puns per para
+You've been busy out DOMinating the front-end of JavaScript. But you might be surprised on how well you can be served by adding a little back-end to your repertoire. This quick little guide will help you get in the node, express yourself, pretty up your ugly data fast. All with no fewer than 2.3 terrible puns per section.
 
 ## Serving you Right: What Node.js is, when you use it
 
