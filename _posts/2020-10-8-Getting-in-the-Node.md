@@ -25,7 +25,7 @@ Vanilla JavaScript and its frameworks are the front stage. JS moves objects in t
 
 ###### Photo by [Adi Goldstein](https://unsplash.com/@adigold1?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/backstage?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText){:target="_blank"}. Could be backstage for anything, anywhere, but one thing's for sure: they have budget for nice cases.
 
-Node.js is about input and output. Its modules can be made as servers, used to develop APIs, act as a conduit to deliver static site information. They work great for data streaming apps, where you have a constant flow of information, things like chatbots for customer support, and single-page applications that can take and give a lot of information asynchronously.
+Node.js is about input and output. Its modules can be made as servers, used to develop APIs, and/or act as a conduit to deliver static site information. They work great for data streaming apps, where you have a constant flow of information, things like chatbots for customer support, and single-page applications that can take and give a lot of information asynchronously.
 
 Apps like video streaming (Netflix), social networks (LinkedIn), payment transactions (eBay and PayPal), and browser games have been built with its help, too.
 
