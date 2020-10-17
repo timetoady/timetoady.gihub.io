@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Database-ics — Distinguishing SQL, NoSQL, and third choice, 
+title: Database-ics — Distinguishing SQL, NoSQL, and the Field
 ---
 #### We cover the basics of modern database ideology: what they do, what they don't, and what they kinda...
 
@@ -57,7 +57,7 @@ Yet another variant is PostgreSQL. Often pronounced simply "postgres" (where's t
 
 ![server farm](/images/postgres.png)
 
-###### *Ah, I guess that's it. Sorta. From [Wikipedia](https://en.wikipedia.org/wiki/PostgreSQL){:target="_blank"}*
+###### *Ah, there it is. Right on the first line. From [Wikipedia](https://en.wikipedia.org/wiki/PostgreSQL){:target="_blank"}*
 
 As a result, PostgreSQL floats in a happy medium of high ACID compatibility, but is also more flexible and more able to handle large databases and complex queries. It's also more approachable than many first-time divers into the SQL sea (uh, *Thor: Ragnarok*?), particularly because it keeps more strictly to the actual Structured Query Language tenets than other mainline SQLs. 
 
