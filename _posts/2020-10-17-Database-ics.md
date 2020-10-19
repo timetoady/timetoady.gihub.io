@@ -40,7 +40,7 @@ Firstly, NoSQLs are dynamic in their schema, meaning they are both flexible in w
 
 ###### *Photo by [Ian Battaglia](https://unsplash.com/@ianjbattaglia){:target="_blank"} on [Unsplash](https://unsplash.com/s/photos/server?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="_blank"}. Server farms are rapidly becoming the new best place to hide the Arc of the Covenant.*
 
-However, these new kids on the block also have a few downsides. Firstly, they do take up more space than their SQL uncles at all sizes. As noted, spaced is cheap now and getting cheaper, but it remains a factor. Secondly, most NoSQLs don't pass muster on what's called the "ACID" test, where a database is proven high in Atomicity, Consistency, Insolation, and Durability. There are some that do better, but by and large that traditional level of security and reliability that a SQL has (be quelled, S's!) may not be available in an NoSQL.
+However, these new kids on the block also have a few downsides. Firstly, they do take up more space than their SQL uncles at all sizes. As noted, space is cheap now and getting cheaper, but it remains a factor. Secondly, most NoSQLs don't pass muster on what's called the "ACID" test, where a database is proven high in Atomicity, Consistency, Insolation, and Durability. There are some that do better, but by and large that traditional level of security and reliability that an SQL has (be quelled, S's!) may not be available in an NoSQL.
 
 That leads to another problem: there are so *many* NoSQLs, and nearly all of them specialize in some specific data structure. Some are good for general documents (like MongoDB), others for key-value storage (like Redis or DynamoDB). Some, like Cassandra and HBase, work better for wide-column work, where you have large amounts of data with predictable queries. If you're working with graphing data, where you need to analyze relationships between data, Neo4j and Amazon Neptune will serve you better.
 
@@ -61,7 +61,7 @@ Yet another variant is PostgreSQL. Often pronounced simply "postgres" (where's t
 
 As a result, PostgreSQL floats in a happy medium of high ACID compatibility, but is also more flexible and more able to handle large databases and complex queries. It's also more approachable than many first-time divers into the SQL sea (uh, *Thor: Ragnarok*?), particularly because it keeps more strictly to the actual Structured Query Language tenets than other mainline SQLs. 
 
-Overall, its a well-rounded compromise between the the feats and the frailties of both sides. That doesn't mean it fits all spaces (there are plenty of times where its far better to be a specialist rather than an all-rounder), but like its NoSQL counterpart MongoDB, it positions itself somewhat in the middle of the equation to catch a broader group of needs.
+Overall, its a well-rounded compromise between the the feats and the frailties of both sides. That doesn't mean it fits all spaces (there are plenty of times when its far better to be a specialist rather than an all-rounder), but like its NoSQL counterpart MongoDB, it positions itself somewhat in the middle of the equation to catch a broader group of needs.
 
 ## The Sum Up
 
