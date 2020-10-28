@@ -27,7 +27,7 @@ const mongoose = require("mongoose");
 
 ## Data Models
 
-Before diving into the rapid-flowing stream of endpoints, I had to get my incoming data models set. I knew that I  essentially needed only three pieces of information: to-dos, category names, and whether said were complete or not.
+Before diving into the rapid-flowing stream of endpoints, I had to get my incoming data models set. I knew that I  essentially needed just three pieces of information: to-dos, the to-do's completion state, and category names.
 
 With that in mind, I applied a very cutdown approach to my schema: categories only needs it's name since mongoDB produces IDs automatically; to-dos just need the to-do, the category ID (which would get populated with the given category's information), and a completion state as a Boolean. There really wasn't much other than that this project needed. 
 
@@ -44,11 +44,11 @@ let TodoSchema = new Schema({
 
 module.exports = mongoose.model('Todos', TodoSchema )
 ```
-###### This ain't exactly calculating atmospheric reentry. Sometimes it's better just to keep things simple. 
+###### This ain't exactly getting sensor data from a space probe. Sometimes it's better just to keep things simple. 
 
 ## Let Data Be Served
 
-Setting up the database was definitely the [lesser of two weevils](https://www.youtube.com/watch?v=Y-aPp7Kiiyg) in my front-to-back-end alignment. Setting up the proper `GET`, `POST`, `DELETE`, and `PUT` methods (i.e. getting CRUD done) wasn't too groundbreaking. For a touch of nicer organization, I routed the methods for the categories and the to-dos into their own sperate js file pens, lest they claw and snap at one another, and let express use them as "todos" and "categories" routes, respectively.
+Setting up the database was definitely the [lesser of two weevils](https://www.youtube.com/watch?v=Y-aPp7Kiiyg) in my front-to-back-end alignment. Writing solid `GET`, `POST`, `DELETE`, and `PUT` methods (i.e. getting CRUD done) isn't too groundbreaking. For a touch of nicer organization, I routed the methods for the categories and the to-dos into their own sperate js file pens, lest they claw and snap at one another, and let express use them as "todos" and "categories" routes, respectively.
 
 Then, to skip any CORS difficulties entirely, hosting the app on a static site call nestled right in the node server file seemed just fine.
 
