@@ -48,9 +48,11 @@ module.exports = mongoose.model('Todos', TodoSchema )
 
 ## Let Data Be Served
 
-Setting up the database was definitely the [lesser of two weevils](https://www.youtube.com/watch?v=Y-aPp7Kiiyg) in my front-to-back-end alignment. Setting up the proper `GET`, `POST`, `DELETE`, and `PUT` methods (i.e. getting CRUD done) wasn't too groundbreaking. For a touch of nicer organization, I routed the methods for the categories and the to-dos into their own sperate js file pens, lest they claw and snap at one another, and let express use them as "todos" and "categories" routes, respectively. 
+Setting up the database was definitely the [lesser of two weevils](https://www.youtube.com/watch?v=Y-aPp7Kiiyg) in my front-to-back-end alignment. Setting up the proper `GET`, `POST`, `DELETE`, and `PUT` methods (i.e. getting CRUD done) wasn't too groundbreaking. For a touch of nicer organization, I routed the methods for the categories and the to-dos into their own sperate js file pens, lest they claw and snap at one another, and let express use them as "todos" and "categories" routes, respectively.
 
-After finagling both heroku and mongoDB Atlas cloud into talking to each other (whitelisting IPs, creating environment variables, setting Config Vars, etc.) I had my setup complete. Or rather, as I would learn diving into the turbid depths that was my front-end to-do app, I had my initial, basic setup complete.
+Then, to skip any CORS difficulties entirely, hosting the app on a static site call nestled right in the node server file seemed just fine.
+
+Finally, after finagling both heroku and mongoDB Atlas into talking to each other (whitelisting IPs, creating environment variables, setting Config Vars, etc.) I had my setup complete. Or rather, as I would learn diving into the turbid depths that was my front-end to-do app, I had my initial, basic setup complete.
 
 ![Config Vars](/images/configvars.png)
 ###### This here? Very important. Your app no worky without it. And it really isn't well referenced in either heroku or mongoDB Atlas documentation. Yay!
