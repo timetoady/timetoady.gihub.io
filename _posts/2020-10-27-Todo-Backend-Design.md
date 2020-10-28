@@ -5,7 +5,7 @@ title: Of Todo App Backends — hooking up a local app to an API database
 #### This week in projects, a marriage of convenience: static site to-do app and API
 
 
-There comes a time in every app's life when they need to get their front end and their back end aligned. 
+There comes a time in every app's life when they need to get their front end and their back end aligned. Sort of like a  chiropractor visit for code.
 
 In the case of my little to-do app from last month, now that's I've tumbled through the rigmarole that was setting up a NoSQL database a couple of times, it was time to take off the localStorage training wheels and actually have it talk to a database. 
 
@@ -29,7 +29,7 @@ const mongoose = require("mongoose");
 
 Before diving into the rapid-flowing stream of endpoints, I had to get my incoming data models set. I knew that I  essentially needed just three pieces of information: to-dos, the to-do's completion state, and category names.
 
-With that in mind, I applied a very cutdown approach to my schema: categories only needs it's name since mongoDB produces IDs automatically; to-dos just need the to-do, the category ID (which would get populated with the given category's information), and a completion state as a Boolean. There really wasn't much other than that this project needed. 
+With that in mind, I applied a very cutdown approach to my schema: categories only needs its name since mongoDB produces IDs automatically; to-dos just need the to-do, the category ID (which would get populated with the given category's information), and a completion state as a Boolean. There really wasn't much other than that this project needed. 
 
 ```javascript
 const mongoose = require('mongoose')
@@ -80,9 +80,9 @@ const removeSelectedCategory = (id) => {
 ```
 ###### If you aren't already saying ["And then?"](https://www.youtube.com/watch?v=CkdyU_eUm1U) each time you code something like this, you will now.
 
-Well, sort of. It also required going back to add a couple more API routes: one to remove all to-do's of a selected category (because it turns out removing a category without removing the to-dos attached to that category caused a nice little Hindenbug); and one to give the right keycodes, turn keys in unison, and press the big red button to wipe both categories and to-dos clean.
+Well, sort of rise from its grave. It also required going back to add a couple more API routes: one to remove all to-do's of a selected category (because it turns out removing a category without removing the to-dos attached to that category caused a nice little Hindenbug); and one to give the right keycodes, turn keys in unison, and press the big red button to wipe both categories and to-dos clean.
 
-Because sometimes, you just don't want to have anything to do anymore, and you choose the nuclear option
+Because sometimes, you just don't want to have anything to do anymore, and you choose the nuclear option.
 
 
 ## A Note on Documentation
@@ -97,8 +97,8 @@ I mean, not that that's ever happened to me.
 
 ![Conan figure](/images/conan.jpg)
 
-###### *Photo by [Edo Nugroho](https://unsplash.com/@edonugroho){:target="_blank"} on [Unsplash](https://unsplash.com/photos/y890Y_WuItw){:target="_blank"}. Who you need to call when the code is has become a cypher. And if you've read this far, and you know this reference and how it relates to Sherlock Holmes, you are a very specific breed of geek, and we should be friends.
+###### *Photo by [Edo Nugroho](https://unsplash.com/@edonugroho){:target="_blank"} on [Unsplash](https://unsplash.com/photos/y890Y_WuItw){:target="_blank"}. Who you need to call when the code has become a cypher. And if you've read this far, and you know this reference and how it relates to Sherlock Holmes, you are a very specific breed of geek, and we should be friends.
 
-Anyway, it's basic courtesy to give a few comments on at least your weightier functions to inform others as to what they are hoping to accomplish, and then supply a `README` that covers the bare essentials. 
+Anyway, it's basic courtesy to give a few comments on at least your weightier functions to inform others as to what they are hoping to accomplish, and then supply a `README` that covers the bare essentials.
 
 The Golden Rule, and all that.
