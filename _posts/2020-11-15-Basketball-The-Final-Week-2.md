@@ -6,7 +6,7 @@ title: Basketball Stat-tastic — Log of the Final Project, Week 2
 
 ![Basketball players](/images/bball2.jpg)
 
-###### *The one you take of photo of after 1000 bricks. Photo by [Markus Spiske](https://www.pexels.com/@markusspiske?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels){:target="_blank"} on [Pexels](https://www.pexels.com/photo/ball-basketball-basketball-court-basketball-hoop-1752757/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels){:target="_blank"}.* 
+###### *The one you take a photo of after 1000 bricks. Photo by [Markus Spiske](https://www.pexels.com/@markusspiske?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels){:target="_blank"} on [Pexels](https://www.pexels.com/photo/ball-basketball-basketball-court-basketball-hoop-1752757/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels){:target="_blank"}.* 
 
 
 The plan for this week was to tidy up a few backend routes and start getting into some meaty frontend logic. Yes, that *was* the plan. The best laid schemes o' mice an' men yadda yadda something about a gang to the aft.
@@ -16,7 +16,7 @@ The plan for this week was to tidy up a few backend routes and start getting int
 
 Adam's blog, Earth date 11/15/2020. 
 
-It turns out, once I actually sat down and thought a while about what types of functionality my front end would need, the more I realized I would need to prepared with the average user in mind: what they would want, what they would need, and what they would probably mess up.
+Once I actually sat down and thought a while about what types of functionality my front end would need, the more I realized I would need to prepare with the average user in mind: what they would want, what they would need, and what they would probably mess up.
 
 ### Topic 1: Fixing Routes
 
@@ -26,11 +26,11 @@ It didn't.
 
 Neither did the MongoDB style `$` update operator. I thought I would get all clever by combining it with tick marks to edit custom items, i.e. ``otherProps.$.${newStat}``. Nope, no effect: both updateOne and updateMany found matches `n` and always gave me `n.Modified` = nadda. 
 
-This is what did work: updating by simply `$unset`ing a stat category from my otherProps field, and then if there is no error, re-adding a new prop to the otherProps array (via `$addToSet`, just to make extra sure of no duplicates) with a different value.
+This is what did work: updating by simply `$unset`ing a stat category from the otherProps array, and then if there is no error, re-adding a new prop to the otherProps array (via `$addToSet`, just to make extra sure of no duplicates), only this time with a different value.
 
-That little joyride of discover took most of the week. Other bits with routes included fixing player routes to remove stats when a player is removed, and setting up hosting on heroku.
+That little joyride of discovery took most of the week. 
 
-But that wasn't all.
+Other bits with routes: fixing player routes to remove stats when a player is removed, and setting up hosting on heroku.
 
 ### Topic 2: Validation
 
