@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basketball Stat-tastic — Log of the Final Project, Week 2 
+title: Basketball Stat-tastic — Log of the Final Project, Week II 
 ---
 #### In which I 'finish' the backend, and start planning the front 
 
@@ -114,7 +114,7 @@ Also, just to give myself a visual starting point, I plopped in a mobile-focused
 
 This time I would do the opposite.
 
-![Picuter](/images/basketballMobile1.png)
+![Basketball Initial mobile setup](/images/basketballMobile1.png)
 
 ###### *It's a start.*
 
