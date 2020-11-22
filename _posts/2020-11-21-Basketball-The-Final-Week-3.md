@@ -18,15 +18,15 @@ This week was much less pondering and much more doing. And, uh, getting things w
 
 ### Topic 1: Behold the Team
 
-Not that my routes were much more ironed out (but not completely, more on that in a bit), it was pretty simple to call it up and flex some DOM manipulation with `querySelector`, `createElement`, and `appendChild`. With that and some CSS fiddling (which is usually fiddliest part for me), behold! a basic default player display!
+Now that my routes were much more ironed out (but not completely, more on that in a bit), it was pretty simple to call it up and flex some DOM manipulation with `querySelector`, `createElement`, and `appendChild`. With that and some CSS fiddling (which is usually fiddliest part for me), behold! a basic default player display!
 
 ![Basketball Initial mobile setup](/images/basketballMobile2.png)
 
 ###### *Not too much here yet. CSS could still use fiddling. But it displays!*
 
-I also wanted to make a place for the team name to be pulled and displayed at the top. But I forgot one tiny little thing: when I added that little datum to my schema, and marked it as required, I didn't also add it to my route. So matter how many times it fiddled with it in Postman, it kept giving me a "teamName field required" message, and yelling "It's Right THERE!" didn't help. 
+I also wanted to make a place for the team name to be pulled and displayed at the top. But I forgot one tiny little thing: when I added that little datum to my schema, and marked it as required, I didn't also add it to my route. So matter how many times it adjusted it and hammered the "Send" button in Postman, it kept giving me a "teamName field required" message, and yelling "It's **right** **there**!" at it didn't help. 
 
-Adding it to the route did. Yup, suuuuper genius. 
+Adding it to the route fields did. Yup, suuuuper genius. 
 
 ### Topic 2: A Model Modal 
 
