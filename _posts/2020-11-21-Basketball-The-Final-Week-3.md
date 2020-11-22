@@ -24,7 +24,7 @@ Now that my routes were much more ironed out (but not completely, more on that i
 
 ###### *Not too much here yet. CSS could still use fiddling. But it displays!*
 
-I also wanted to make a place for the team name to be pulled and displayed at the top. But I forgot one tiny little thing: when I added that little datum to my schema, and marked it as required, I didn't also add it to my route. So matter how many times it adjusted it and hammered the "Send" button in Postman, it kept giving me a "teamName field required" message, and yelling "It's **right** **there**!" at it didn't help. 
+I also wanted to make a place for the team name to be pulled and displayed at the top. But I forgot one tiny little thing: when I added that little datum to my schema, and marked it as required, I didn't also add it to my route. So no matter how many times I adjusted it and hammered the "Send" button in Postman, it kept giving me a "teamName field required" message, and yelling "It's **right** **there**!" didn't help. 
 
 Adding it to the route fields did. Yup, suuuuper genius. 
 
