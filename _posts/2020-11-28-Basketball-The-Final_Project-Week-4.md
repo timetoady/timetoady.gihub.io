@@ -6,7 +6,7 @@ title: Basketball Stat-tastic — Log of the Final Project, Week V.I. (Victory I
 
 ![Basketball players](/images/bball4.jpg)
 
-###### *It was a long, dark week for basketball apps.. Photo by [Oleg Magni](https://www.pexels.com/@oleg-magni?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels){:target="_blank"} on [Pexels](https://www.pexels.com/photo/silhouette-photo-of-basketball-hoop-1040482/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels){:target="_blank"}.* 
+###### *It was a long, dark week for basketball apps. Photo by [Oleg Magni](https://www.pexels.com/@oleg-magni?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels){:target="_blank"} on [Pexels](https://www.pexels.com/photo/silhouette-photo-of-basketball-hoop-1040482/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels){:target="_blank"}.* 
 
 
 And who says people never get anything done on vacation weeks. 
@@ -61,33 +61,33 @@ input.addEventListener('focus', () => {
 ```
 ###### *Just a little listener event set up around my required inputs as they are constructed into my DOM. `focus` and `blur` don't cover everything, but mostly do the job.*
 
-The visual aspect was relatively simple, as you can see above. And in the end, I followed a similar pattern for the actual data check: nest the required inputs in a function that only unlocks the "SAVE NEW PLAYER" submit button once all the required fields have a minimum number of characters inside. The click listener only gets added if they are all present (think lots of `this && that && thatToo` in my ternary statement) and the style changes, too.
+The visual aspect was relatively simple, as you can see above. And in the end, I followed a similar pattern for the actual data check: nest the required inputs in a function that only unlocks the "SAVE NEW PLAYER" submit button once all the required fields have a minimum number of characters inside. The click listener only gets added if they are all present (think lots of `this && that && thatToo` in my ternary statement) and the style changes, too, going from gray to orange and from a `not-allowed` cursor to `pointer`.
 
-But even after this specification for my user, it still felt too... vague. If there's a way for a person to somehow miss the steps to fill out a form and press submit, they will inevitably miss it, over and over. So to make it extra obvious, grabbing a couple of tooltips seemed idea. 
+But even after this specification for my user, it still felt too... vague. If there's a way for a person to somehow miss the steps to fill out a form and press submit, they will inevitably miss it, over and over. So to make it extra redundantly obvious, adding a couple of tooltips seemed ideal. 
 
-I toyed with custom tooltips for a bit, testing the waters of a "JavaScript Tooltip Generator" even, but settled on Bootstrap's easy-add utility. Figuring out how to alter that tooltip's text took some extra digging (thanks for almost nothing, Bootstrap documentation) but it, too came together in just a few jQuery lines.
+I toyed with custom tooltips for a bit, testing the waters of a "JavaScript Tooltip Generator" even, but settled on Bootstrap's easy-add utility. Figuring out how to alter that tooltip's text in JavaScript took some extra digging (thanks for almost nothing, Bootstrap documentation) but it, too, came together in just a few jQuery lines.
 
 ```javascript
 $('[data-toggle="tooltip"]').tooltip('hide')
 .attr('data-original-title', 'Click to save new player.')
 ```
-###### *This particular version changes ALL tooltips in a page, but you can just as easily alter the first field to the ID of your specific tooltip. I'm leaving this here for the next person who can avoid peering deep into forums and help pages for this stupidly simple two lines of code.*
+###### *This particular version changes ALL tooltips in a page, but you can just as easily alter the first field to the ID of your specific tooltip. I'm leaving this here for the next person who can avoid peering deep into forums and help pages for this stupidly simple two lines of code, especially the second one.*
 
 ### Topic 3: Chaining API POST calls: a hate letter to an error
 
-Initially, I believed setting up API POST calls would be simple. Call the POST function from my api.js for my initial player info, throw on a `.then()`, grab the ID generated and returned in the `responce`, add it to my stat info, and `.then()` send the stats. So easy. I had it all planned out.
+Initially, I believed setting up API POST calls would be simple. Call the `POST` function from my api.js for my initial player info, throw on a `.then()`, grab the ID generated and returned in the `responce`, add it to my stat info, and `.then()` send the stats. So easy. I had it all planned out.
 
 Yeah. So, so easy.
 
 Ha ha. Ha ha ha. Ha.
 
-Only there were problems. Initially it was just figuring out how to get data from a JavaScript generated form and turn that into a JSON that my POST methods can take. But liberal applications of a `FormData()` constructor and a simple object-making function, and that was solved.
+Only there were problems. Initially it was just figuring out how to get data from a JavaScript generated form and turn that into a JSON that my `POST` methods can take. But with the liberal application of a `FormData()` constructor and a simple object-making function, that lesser box was checked.
 
-But then I ran into this:
+But then when I actually ran the the thing, my second API call kept getting this:
 
 `SyntaxError: Unexpected token d in json at position 0`
 
-If you've ever Googled error, you'll see that the circumstances under which it occurs can be... somewhat broad. Just the sheer amount of time spent looking at other peoples nearly unrelated problems took many hours of my life that I won't get back during a holiday weekend. Eventually, though, I got a basic gist of what it was saying: something is wrong with the format of what I'm sending. It's not JSON-y.
+If you've ever Googled this error, you'll see that the circumstances under which it can occur can be... somewhat broad. Just the sheer amount of time spent looking at the false leads of other peoples nearly unrelated problems took many hours of my life during a holiday weekend that I won't get back. Eventually, though, I got a basic gist of what it was saying: something is wrong with the format of what I'm sending. It's not JSON-y.
 
 But the really amazingly awesome thing was, the first half of the call (adding a new player) went through flawlessly, but the second half (adding stats to that player) came up with this junk. This, when the setup of the two chained calls was basically identical.
 
@@ -95,7 +95,7 @@ So why was my own server giving me lip when I tried to do essentially the same t
 
 It turned out the problem was twofold.
 
-First, the format of my API call had to change. As I had it worked perfectly for single calls in a `try...catch` block, but it was not passing the info I needed to further functions(the ID my POST generated that I needed to pass on to my stats to connect them to my player), and gave me that blurping error message for my second call. I needed to reformat my standard API call to handle a second passed JSON for my stats.
+First, the format of my API call had to change. As I had it worked perfectly for single calls in a `try...catch` block, but it was not passing the info I needed to further functions (the new ID my `POST` to MongoDB generated that I needed to pass on to my stats to connect them to my player), and gave me that blurping error message for my second call. I needed to reformat my standard API call to handle a second passed JSON for my stats.
 
 So my function went from this:
 
@@ -151,15 +151,17 @@ So my function went from this:
     
   }
 ```
-Aside from extra verbosity to fit my situation, it also shifted style quite a bit to get what I needed. And it's still not perfect: that second `.then(response => console.log(response))` is giving me `undefined` as a return, and I still have no earthy idea why. At least everything else works: player info post, return ID, add ID to stats, post stats. Just like I drew it up. 
+Aside from extra verbosity to fit my situation, it also shifted style quite a bit to get what I needed. And it's still not perfect: that second `.then(response => console.log(response))` is giving me `undefined` as a return, and I still have no earthy idea why. At least everything else works: post player info, return ID, add ID to stats, post stats. Just like I drew it up. 
 
-Eventually. Until I have to add one more call to add the extraStats categories. Sigh.
+Eventually. 
 
-But the was also a second problem. Discovered after much teeth grinding and unkind words, I had to return to my player schema in my backend and switch a few fields I had originally thought would be `Number`s to `String`s. My back end *should* have been throwing specific errors for that like it did when I did testing with Postman, but there must be some middleware I'm missing out on, because all I got was that @#$%&! generic syntax error from my `catch` for info from the front end. This was a pretty simple, dumb error on my part, but it would have been nice if it was easier to see what my simple, dumb error was.
+Until I have to add one more call to add the extraStats categories. Sigh.
+
+But the was also a second problem. Discovered after much teeth grinding and unkind words, I had to return to my player schema in my backend and switch a few fields I had originally thought would be `Number`s to `String`s. My backend *should* have been throwing specific errors for that like it did when I did testing with Postman, but there must be some middleware I'm missing out on, because all I got was that @#$%&! generic syntax error from my `catch` for info from the frontend. This was a pretty simple, dumb error on my part, but it would have been nice if it was easier to see what my simple, dumb error was.
 
 And so I conclude that for validation purposes, never have a `type=text` on your client side input and `{type: Number}` on your server side schema. 
 
-One just forgets these things weeks after setting up one and `.then()` the other...
+One just forgets these things weeks after setting up one before getting to the other...
 
 
 ### Looking Ahead
