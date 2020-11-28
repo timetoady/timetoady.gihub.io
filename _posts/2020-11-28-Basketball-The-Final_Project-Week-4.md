@@ -83,11 +83,11 @@ Ha ha. Ha ha ha. Ha.
 
 Only there were problems. Initially it was just figuring out how to get data from a JavaScript generated form and turn that into a JSON that my `POST` methods can take. But with the liberal application of a `FormData()` constructor and a simple object-making function, that lesser box was checked.
 
-But then when I actually ran the the thing, my second API call kept getting this:
+But then when I actually ran the thing, my second API call kept getting this:
 
 `SyntaxError: Unexpected token d in json at position 0`
 
-If you've ever Googled this error, you'll see that the circumstances under which it can occur can be... somewhat broad. Just the sheer amount of time spent looking at the false leads of other peoples nearly unrelated problems took many hours of my life during a holiday weekend that I won't get back. Eventually, though, I got a basic gist of what it was saying: something is wrong with the format of what I'm sending. It's not JSON-y.
+If you've ever Googled this error, you'll see that the circumstances under which it can occur can be somewhat... broad. Just the sheer amount of time spent looking at the false leads of other peoples nearly unrelated problems took many hours of my life during a holiday weekend that I won't get back. Eventually, though, I got a basic gist of what it was saying: something is wrong with the format of what I'm sending. It's not JSON-y.
 
 But the really amazingly awesome thing was, the first half of the call (adding a new player) went through flawlessly, but the second half (adding stats to that player) came up with this junk. This, when the setup of the two chained calls was basically identical.
 
