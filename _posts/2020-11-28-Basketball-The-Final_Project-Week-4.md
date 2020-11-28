@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basketball Stat-tastic — Log of the Final Project, Week V.I. (Victory Incremental)
+title: Basketball Stat-tastic — Log of the Final Project, Week I.V. (Incremental Victory)
 ---
 #### Style slogging, validation vetting, tooltip tapping, and %$#% #$%^#$ API call chaining
 
