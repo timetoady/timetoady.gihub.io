@@ -11,11 +11,13 @@ title: Basketball Stat-tastic — Log of the Final Project, Week 5, the worst se
 
 This week was packed with tons of work... on a different project than this one. But I did cram several things into late in the week. What can I say? I like to focus on a project and punch it in when I see the goal line in sight. 
 
-The, uh, the goal line is still a little more distant on this one. Things might (and have already been) a bit crunchy.
+The, uh, the goal line is still a little more distant on this one. Things might get (and have already been) a bit crunchy.
 
 ## Week 5 Progress Report
 
-Although compacted into approximately a 24 hour period (spanning from 12:34 AM to 11:23 PM of the same day), a fair number of things were accomplished. First, I realized I needed to add a general team name change function instead of having it as an input in each new player add. Then I finally, (**finally**) fixed my chain API call, did a fair amount of bug fixing, and did most of a save-player-ending navigation modal.
+Although compacted into approximately a 24 hour period ( with commits spanning from 12:34 AM to 11:23 PM of the same day), a fair number of things were accomplished. First, I realized I needed to add a general team name change function instead of having it as an input in each new player add. Then I finally, (**finally**) fixed my chain API call, did a fair amount of bug fixing, and did most of a save-player-ending navigation modal. 
+
+PLUS... well, definitely not ULTRA. Plus more, at least.
 
 ### Topic 1: A Team By Any Other Name
 
@@ -111,7 +113,7 @@ Should be. Knock on wood.
 
 The vast and cavalier changes I had to make through these steps resulted in a few irritating bugs that needed to be squashed. Incorrect replies, duplicated player rendering, broken modal parts, misnamed variables... a good culling was needed before I could proceed with the rest.
 
-Add to that, I needed something to happen after a user saves their new player and ships off that massive chain API. So another modal, a few basic options, and error checker, and poof.
+Add to that, I needed something to happen after a user saves their new player and ships off that massive chain API. So another modal, a few basic options, and an error checker, and poof.
 
 To round things out, I **finally** started mocking up the player view logic, so that when you click on any individual player on your roster, you can get the in-depth breakdown. Nothing to show yet, but building off the create player stuff, it shouldn't be nearly as much work.
 
