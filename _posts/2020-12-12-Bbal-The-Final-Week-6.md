@@ -167,7 +167,7 @@ Add a couple of modals for saving changes and removing the player entirely, a bu
 
 ![Edit Player Page](/images/editPlayer.png)
 
-###### _The Player Edit page. As a nice bonus, I set the logic so it edits the page title at the top of the browser tab to show the name of the player you're editing. Neat! Also, mostly like Bob is neither my nor your uncle, unless he is._
+###### _The Player Edit page. As a nice bonus, I set the logic so it edits the page title at the top of the browser tab to show the name of the player you're editing. Neat! Also, most likely Bob is neither my nor your uncle, unless he is._
 
 ### Topic 3: The Unexpected Difficulty of Sorting by Deeply Nested Values
 
@@ -216,15 +216,15 @@ export function getObject(theObject, key) {
   return result;
 }
 ```
-###### This certainly isn't the only way to drill in, and you can probably alter it to fit your taste or be more ES6. But it works, and after a long night grasping, it was beautiful.*
+###### *This certainly isn't the only way to drill in, and you can probably alter it to fit your taste or be more ES6. But it works, and after a long night grasping, it was beautiful.*
 
-With this final major function, uh, functioning (even after I tidied it, refactored it into a module, and got rid of a ton of console logs), the primary effort of the app was over. All the tier 1 functions laid out in the design phase are working, and since I've been moduling left, right, and center from nearly the beginning, there isn't even as much cleanup as there might normally be.
+With this final major function, uh, functioning (even after I tidied it, refactored it into a module, and got rid of a ton of console logs), the primary effort of the app was over. All the tier 1 functions laid out in the design phase are working, and since I've been moduling left, right, and center nearly from the beginning, there isn't even as much cleanup as there might normally be. Besides, you know, those console logs I love so very much.
 
 So with a couple of quick bug fixes, and baring no major outages, it's ready to go.
 
 ### Looking Ahead
 
-This may be the end of this app (it's possible some more styling and UI additions will be thrown in), but through these weeks of jumping back and forth between it and other projects, it feels like I have a lot to learn just looking over parts that I did weeks ago. 
+This may be the end of this app (it's possible some more styling and UI additions will be thrown in), but through these weeks of jumping back and forth between it and other projects, it feels like I have a lot to learn just looking over parts that I did and forgot about. 
 
 Heck, I just keep staring at those blinking eyes of the nested stat getter that I laboriously pieced together from scratch, and can't help thinking to myself: 
 
