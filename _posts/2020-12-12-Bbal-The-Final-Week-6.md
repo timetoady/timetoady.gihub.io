@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basketball Stat-tastic — Log of the Final Project, Week 5, the worst sequel
+title: Basketball Stat-tastic Final Project Week 6 — Off into the Sunset
 ---
 
 #### Always have to end on a make
