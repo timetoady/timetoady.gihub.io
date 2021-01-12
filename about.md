@@ -23,6 +23,8 @@ JavaScript is where I've done most of my work, but CSS and HTML are close frenem
 
 I want to get a solid hold of full stack development: a variety of frameworks for front end and back. You never know what will be useful in the future, so getting a hold of a variety will help me be prepared to dive in more deeply to whatever a project or company requires.
 
+I also want to build on what I have: better understanding of React in particular, especially with how it handles props. 
+
 ### Contact me
 
 [@ajandreason](https://twitter.com/ajandreason) on Twitter
