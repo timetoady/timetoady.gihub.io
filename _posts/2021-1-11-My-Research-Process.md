@@ -4,8 +4,14 @@ title: Learning Code — Tips on Research (and Repetition)
 ---
 #### When you boil it down, learning to code is essentially like learning a language. Or rather, several groups of syntactically similar sub-languages that change all the time, most of which will inevitably be suddenly obsolete.
 
+![Code on computer](/images/code.jpg)
 
-If you've ever take it upon yourself to learn a second (or third) language, you figure out pretty quickly that picking it up is not usually an overnight deal. Languages have many learning challenges to be contended with: vocabulary and syntax are a lot more than just words put in the right order. Words have denotation, connotation, and subtext, and grammar had depth and meaning that takes experience to appreciate. And that's not even getting into intonation, pronunciation, and listening.
+###### _Pretty, pretty colors, VSCode. Photo by [Luca Bravo](https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="\_blank"} on [Unsplash](https://unsplash.com/photos/XJXWbfSo2f0){:target="\_blank"}._
+
+
+If you've ever take it upon yourself to learn a second (or third) language, you figure out pretty quickly that picking it up is not usually an overnight deal. Languages have many learning challenges to be contended with: vocabulary and syntax are a lot more than just words put in the right order. 
+
+Words have denotation, connotation, and subtext, and grammar had depth and meaning that takes experience to appreciate. And that's not even getting into intonation, pronunciation, and listening.
 
 Language learners don't learn the same way, either. Some excel at forming fluid sentences, while others are great at picking up vocab. Some have a great ear and can understand and replicate intonation and usage. 
 
@@ -25,11 +31,17 @@ And over. Until I get it.
 
 And how do you do all that? Well, the short answer is... Google it.
 
+![Code on computer](/images/google.jpg)
+###### _Google may be the salvation or doom of humanity. Or it might disappear into the night. Hey, every other world dominating empire did eventually. Photo by [Luca Bravo](https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="\_blank"} on [Unsplash](https://unsplash.com/photos/jz4ca36oJ_M){:target="\_blank"}._
+
 But the actual answer is Google it, and all that other stuff that takes place before and after you fire up that eponymous search engine and hammer those keys to solve the problem of the day.
 
 ### Step One: Foundation of Documentation
 
-Before you set off to scavenge the interwebs for that piece of code you need, consider that it's often better to build your new code on a strong foundation rather than just hammer a new snippet on anyplace you can. That starts with, yup, reading the documentation. 
+Before you set off to scavenge the interwebs for that piece of code you need, consider that it's often better to build your new code on a strong foundation rather than just hammer a new snippet on anyplace you can. That starts with, yup, reading the documentation.
+
+![Code on computer](/images/mongodb.png)
+###### _MongoDB's documentation is neither exciting nor sexy, but it sure useful for making a database in MongoDB. Photo from [https://docs.mongodb.com/cloud/](https://docs.mongodb.com/cloud/){:target="\_blank"}._
 
 No one is saying this will be exciting. It's basically a big ol' list of rules and definitions with a few tidbits of example stuck between their teeth. But remember you don't have to memorize every bit of it: reading it over at least once should give you the general layout, or at least an outline of the language. That way, the next time you want your code to do something, maybe a memory will spark, and instead of searching for "something that picks between choices" you'll be able to plug in "switch statement" instead.
 
