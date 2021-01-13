@@ -84,7 +84,7 @@ That's perfectly okay. As long as you do it again.
 
 And again. And... well, do it better, again.
 
-Just keep polishing that turd until it shines. It can be done. [Mythbusters proved it.](https://www.facebook.com/MythBusters/videos/10152575703413224). 
+Just keep polishing that turd until it shines. It can be done. [Mythbusters proved it](https://www.facebook.com/MythBusters/videos/10152575703413224). 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yiJ9fy1qSFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
