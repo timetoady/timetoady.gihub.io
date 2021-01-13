@@ -2,7 +2,7 @@
 layout: post
 title: Learning Code — Tips on Research (and Repetition)
 ---
-#### When you boil it down, learning to code is essentially like learning a language. Or rather, several groups of syntactically similar sub-languages that change all the time, most of which will inevitably be suddenly obsolete.
+#### When you boil it down, learning to code is essentially like learning a language. Or rather, several groups of syntactically similar sub-languages that change all the time, most of which will inevitably one day be abruptly obsolete.
 
 ![Code on computer](/images/code.jpg)
 
@@ -31,7 +31,7 @@ And over. Until I get it.
 
 And how do you do all that? Well, the short answer is... Google it.
 
-![Code on computer](/images/google.jpg)
+![Google Logo](/images/google.jpg)
 ###### _Google may be the salvation or doom of humanity. Or it might disappear into the night. Hey, every other world dominating empire did eventually. Photo by [Luca Bravo](https://unsplash.com/@lucabravo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="\_blank"} on [Unsplash](https://unsplash.com/photos/jz4ca36oJ_M){:target="\_blank"}._
 
 But the actual answer is Google it, and all that other stuff that takes place before and after you fire up that eponymous search engine and hammer those keys to solve the problem of the day.
@@ -40,7 +40,7 @@ But the actual answer is Google it, and all that other stuff that takes place be
 
 Before you set off to scavenge the interwebs for that piece of code you need, consider that it's often better to build your new code on a strong foundation rather than just hammer a new snippet on anyplace you can. That starts with, yup, reading the documentation.
 
-![Code on computer](/images/mongodb.png)
+![MongoDB](/images/mongodb.png)
 ###### _MongoDB's documentation is neither exciting nor sexy, but it sure useful for making a database in MongoDB. Photo from [https://docs.mongodb.com/cloud/](https://docs.mongodb.com/cloud/){:target="\_blank"}._
 
 No one is saying this will be exciting. It's basically a big ol' list of rules and definitions with a few tidbits of example stuck between their teeth. But remember you don't have to memorize every bit of it: reading it over at least once should give you the general layout, or at least an outline of the language. That way, the next time you want your code to do something, maybe a memory will spark, and instead of searching for "something that picks between choices" you'll be able to plug in "switch statement" instead.
@@ -57,11 +57,14 @@ Like, a lot of them.
 
 Most of the time when I'm trying to learn a new method/topic/form, I'll open a minimum of five to seven sites on the topic (usually starting with documentation). Maybe the first one has all the answers I need, but even if it does, I understand the concept a lot better if I have other usages and examples with which to compare. 
 
+![Code on computer](/images/tabs.png)
+###### _If your research on Google just picks out the first couple of entries, please consider expanding. Photo from [https://docs.mongodb.com/cloud/](https://docs.mongodb.com/cloud/){:target="\_blank"}._
+
 From there, it's grind time: read lots of posts, blogs, and Stack Overflows. Sometimes you have to doggedly scan forums for the info you need. Scanning is a good tactic to get to important info, but remember that when actually get to the pertinent info, focus in read it seriously.
 
 ### Aside: Beware "Tutorial Hell"
 
-Tutorials are a good thing. They are. They often give you well-rehearsed examples of a pattern that works in a given coding language. Learning those patterns help you get the "feel", the intonation of your code. Once your thumb is on that pulse, a good tutorial will let you fly free on your own from there.
+Tutorials are a good thing. They are. They can give you well-rehearsed examples of a pattern that works in a given coding language. Learning those patterns help you get the "feel", the intonation of your code. Once your thumb is on that pulse, a good tutorial will let you fly free on your own from there.
 
 But most tutorials online aren't quite that good.
 
@@ -73,7 +76,7 @@ This is why it's often better to do the grunt work of discovery yourself. But if
 
 No duh, no one is great at coding languages right away. Yes, they are like a human languages, but at the same time, no one really speaks code "natively". You won't find anyone mumbling in binary in their sleep, offering George Carlin quotes translated into C#, or opining how their mother used to nag them ```const yourChores = (you) => you.laundry.sort() === true ? stayUpLate = true : grounded = true```. 
 
-Even if somehow there was some bizarre cult who adopted a coding language as their official tongue, you can bet that their kids would have a rough go of it at first. I've heard my 2 1/2-year-old speak enough to know that, while she's cute, she's not exactly spouting Shakespeare. 
+Even if somehow there was some bizarre cult who adopted a coding language as their official tongue, you can bet that their kids would have a rough go of it at first. I've heard my 2 1/2-year-old speak enough to know that, while she's cute, she's not exactly spouting Shakespeare.
 
 What I'm trying to say is, most initial coding efforts in a language look like crap. They may work, eventually, barely, perhaps with unintended side effects and caveats, or they may take 153 lines to do what someone with experience can do with 10.
 
@@ -82,6 +85,8 @@ That's perfectly okay. As long as you do it again.
 And again. And... well, do it better, again.
 
 Just keep polishing that turd until it shines. It can be done. [Mythbusters proved it.](https://www.facebook.com/MythBusters/videos/10152575703413224). 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yiJ9fy1qSFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Step Four: Go Back and Learn It Again
 
@@ -92,6 +97,10 @@ Well, just remember that there were a lot of numbers before 6, and there's a goo
 Human languages change quickly. Even in a single generation, usage changes, connotation changes... even grammar ain't what she used to be, no matter what some prescriptivist linguistic elitists will tell you. It's a part of human culture: even for the French (but that's a whole 'nother story).
 
 Coding languages make spoken ones look glacial.
+
+![Matrix](/images/moreCode.jpg)
+
+###### _Of course code changes rapidly. How else are we going to get to SAO or the Matrix in the future? Photo by [Markus Spiske](https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText){:target="\_blank"} on [Unsplash](https://unsplash.com/photos/iar-afB0QQw){:target="\_blank"}._
 
 What was ```var``` yesterday is moreso ```const``` or ```let``` today, but there's no telling if it might be also ```thus``` or ```accord``` or ```word``` tomorrow. That's why it's best to be flexible, and keep tabs on how your language(s) of choice are evolving. This is much easier to do than spoken languages, because organizations and programmers announce and debate what's coming, and it's far better to keep up rather than catch up.
 
