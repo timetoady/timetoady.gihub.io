@@ -2,7 +2,7 @@
 layout: post
 title: Learning Code — Tips on Research (and Repetition)
 ---
-#### When you boil it down, learning to code is essentially like learning a language. Or rather, several groups of syntactically similar sub-languages that change all the time, most of which will inevitably one day be abruptly obsolete.
+#### When you boil it down, learning to code is a lot like learning a language. Or rather, learning several groups of syntactically similar sub-languages that change all the time, most of which will inevitably one day be abruptly obsolete.
 
 ![Code on computer](/images/code.jpg)
 
@@ -41,7 +41,7 @@ But the actual answer is Google it, and all that other stuff that takes place be
 Before you set off to scavenge the interwebs for that piece of code you need, consider that it's often better to build your new code on a strong foundation rather than just hammer a new snippet on anyplace you can. That starts with, yup, reading the documentation.
 
 ![MongoDB](/images/mongodb.png)
-###### _MongoDB's documentation is neither exciting nor sexy, but it sure useful for making a database in MongoDB. Photo from [https://docs.mongodb.com/cloud/](https://docs.mongodb.com/cloud/){:target="\_blank"}._
+###### _MongoDB's documentation is neither exciting nor sexy, but it sure is useful for making a database in MongoDB. Photo from [https://docs.mongodb.com/cloud/](https://docs.mongodb.com/cloud/){:target="\_blank"}._
 
 No one is saying this will be exciting. It's basically a big ol' list of rules and definitions with a few tidbits of example stuck between their teeth. But remember you don't have to memorize every bit of it: reading it over at least once should give you the general layout, or at least an outline of the language. That way, the next time you want your code to do something, maybe a memory will spark, and instead of searching for "something that picks between choices" you'll be able to plug in "switch statement" instead.
 
