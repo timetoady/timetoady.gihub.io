@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Git Part I — The Basics
+title: Git Part II — Advanced Gittiness
 ---
 #### An insult to British people, but also a system of file version control
 
@@ -28,6 +28,6 @@ GitHub is a web hosting service and repository built around Git. GitHub uses sof
 
 Due to its prominence in the digital space, GitHub occasionally can get confused with Git itself. Where Git is the protocol, the language, and the methodology of this type of distributed version control, GitHub is a really shiny and polished package that makes Git more accessible. 
 
-Although still primarily for software development, users of GitHub can store and keep track of files for almost any sort of project, like a community-made recipe book, design iterations for a company logo, or those fifty-thousand pictures of your oldest child.
+Although still primarily for software development, users of GitHub can store and keep track of files for almost any sort of project, like a user-made recipe book, design iterations for a company logo, or those fifty-thousand pictures of your oldest child.
 
 It can store pictures of your younger children, too. That is, if you can find any.
