@@ -61,7 +61,7 @@ You can also directly create a new branch by adding the `-b` option before the b
 
 There has not been a coder that has ever coded that has never screwed something up in a commit. So here are a couple ways to fix what you broke, using two Git versions of Ctrl+Z.
 
-Of the two, `git reset` can be more of the nuclear option. There are three different options for `git reset`: `--soft` (which simply moves your committed changed back into the staging area), `--mixed` (which is the default when `git reset` is called, and moves changed back into the working directory), and `--hard`, the truly keys-turning-in-unison, hit-the-big-red-button-option that sends everything you changed right in to the trash.
+Of the two, `git reset` can be more of the nuclear option. There are three different options for `git reset`: `--soft` (which simply moves your committed changes back into the staging area), `--mixed` (which is the default when `git reset` is called, and moves changes back into the working directory), and `--hard`, the truly keys-turning-in-unison, hit-the-big-red-button option that sends everything you changed right into the trash.
 
 ![Git Reset](/images/gitReset.png)
 ###### _By `git reset --soft` here, I sent my third commit on the local repo back to the staging area. By re-adding and committing, it get's sent back again, with now a my newest message in the log and a new commit. The old commit is effectively erased._
@@ -74,11 +74,11 @@ The `--hard` option also cleans out anything in your staging area and working di
 ![Git Revert](/images/gitRevert.png)
 ###### _Here is the final step before a revert will process. If you have conflicts, like I have here, best resolve them and then commit with a message, or `:q` to call it good and complete the revert. If this is a remote repo, you still need to push the changes._
 
-Instead of excising some portion or all of your commit history for a project on your repo, revert simply creates a new commit at an earlier point in your commit history of your choosing. It does not revise the history, but branches from an earlier point. Like _Avengers Endgame_ (and if you don't remember that, you probably didn't really watch the movie, because boy did they beat us over the head with it.)
+Instead of excising some portion or all of your commit history for a project on your repo, revert simply creates a new commit at an earlier point in your commit history of your choosing. It does not revise the history, but branches from an earlier point. Like _Avengers Endgame_ (and if you don't remember that, you probably didn't really watch the movie, because boy did they [beat us over the head with it](https://youtu.be/nmrqYcw_xsE?t=127).)
 
 In general, getting your ducks in a row locally can call for rebase, reset, and others, but once out in the wild, revert is the safe option.
 
-Another cool tip? You can use the `--abort` option on rebase, revert, and others to cancel the operation halfway. Handy.
+Another cool tip? You can use the `--abort` option on rebase, revert etc. to cancel the operation halfway. Handy.
 
 ## Submodule
 
@@ -94,10 +94,12 @@ Adding a submodule to your own repo makes a full clone of whatever was in that s
 
 Submodules can, however, add an extra layer of complexity to your Git work that opens the door for errors. It can have some issues with scaling, too. 
 
-You can create submodules manually in your terminal by first initializing git in separate directory from your main project, and then using `git submodule add ./<submoduleDirectoryName>` to add the repo at submarines to the index of your main repo. GitHub and GitKraken also have tools that let you add and track submodules.
+You can create submodules manually in your terminal by first initializing Git in separate directory from your main project, and then using `git submodule add ./<submoduleDirectoryName>` to add the repo to the index of your main repo. GitHub and GitKraken also have tools that let you add and track submodules.
 
-For more information, here's a nice overview:
+For more information on submodules, here's a nice overview:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZYq3NJnO08U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Got all that? Yes? No? No problem: it never hurts to look things up again.
 
+And again.
