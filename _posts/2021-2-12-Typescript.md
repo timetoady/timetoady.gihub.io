@@ -43,3 +43,4 @@ But thankfully, as noted on their own website, "adopting TypeScript is not a bin
 
 In any case, since TypeScript is dependent on JavaScript, and there's no telling if some change in a future JavaScript version might break things in TypeScript, it's probably best not to go whole hog on typing your app the nth degree. But there's no denying that adding a little extra regulation to your JS code can pay dividends during and after your primary development phase.
 
+And look, I got out of this whole post without even a single "Who's on first?" reference. My wife would be so... uh, not proud exactly. Less exasperated?
