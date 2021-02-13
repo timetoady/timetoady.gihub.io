@@ -5,7 +5,7 @@ title: TypeScript — A Brief Primer
 
 #### I give the what, why, and a little of the how of TypeScript. It's probably up to you to fill in the who, when, and where.
 
-![TypeScript example?](/images/notTypeScript.jpg)
+![TypeScript example?](/images/notTypescript.jpg)
 
 ###### _This photo... might be of TypeScript? They are using webpack and requiring 'tsconfig-paths-webpack-plugin', anyway, so it could be. I mean, this is basically the best you can get when you just search for 'JavaScript' on a royalty free image site, because 'TypeScript' comes up empty. Photo by [Ferenc Almasi](https://unsplash.com/@flowforfrank){:target="\_blank"} on [Unsplash](https://unsplash.com/photos/EJSaEnVvZcg){:target="\_blank"}._
 
@@ -27,9 +27,9 @@ Code written in TypeScript cannot be directly interpreted by your browser or Nod
 
 **Transpilation**, FYI, is basically a subset of **compilation**: both are a process of taking source code in one language and outputting it into another. Compiling is the more broad, umbrella term, and could be applied to converting C# to JavaScript or Python to an executable. 
 
-Transpile, on the other hand, generally refers to converting a source code into another version of that code. In the case of JavaScript, for example, TypeScript gives you the option of transpiling to ES6, ES5, ES2015, and more.
+To transpile, on the other hand, generally refers to converting a source code into another version of that code. In the case of JavaScript, for example, TypeScript gives you the option of transpiling to ES6, ES5, ES2015, and more.
 
-![Not TypeScript](/images/TypeScript.png)
+![Typescriptlang.org](/images/typescript.png)
 
 ###### _If you're looking for a quick rundown of the pros and cons, as well as a king's bounty of documentation, [TypeScript's official site](https://www.TypeScriptlang.org/) has you covered._
 
