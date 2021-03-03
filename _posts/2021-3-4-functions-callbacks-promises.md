@@ -38,7 +38,7 @@ If that sounds a little leaky, yes it could be. There are also some browser inco
 #### The Expressive One
 
 ```javascript
-let myVariable = function () {
+const myVariable = function () {
   statements;
 };
 ```
@@ -47,7 +47,7 @@ This is a functional expression. Unlike above, it only becomes available to be c
 
 It's also possible to chain these first two methods (i.e. `myFunction = function namedFunction(){statements})`) and MDN [notes some benefits](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions), but personally this seems like it could get confusing. You'll have to see what works best for you.
 
-### The IIFE Rebel
+### The Ol' IIFE
 
 ```javascript
 (function () {
@@ -66,37 +66,40 @@ Happy IIFE, happy life.
 ```javascript
 const myFunction = (param) => {
   statements;
+  return something;
 };
 
-const mySimilarFunction = (param) => param.method();
+const mySimilarFunction = param => param.method();
 ```
 
 There are all sorts of slick ways to implement the arrow function expression. As it is written in `myFunction` above, it's a slightly more compact way of declaring a function, but it shines the brightest when you desire even greater brevity.
 
 When it appears as the second example, because it takes a single argument, you can dispense with parenthesis and even a return statement (see more about those below.)
 
-You can even go one step further and use `arg => statement` to bind it to its `this` value, or use it as method called from an object with `() => expresssion`.
+You can even go one step further and use `arg => statement` without an expression defined to bind it to its `this` value, or use it as method called from an object with `() => expresssion`.
 
 Arrow functions are incredibly useful, but can have a bit of a learning curve due to their brevity.
 
 ### How to return a value from a function
+
+Sometime you just want your function to do things, especially manipulating the DOM. But most of the time, you want your function to give you some sort of result. Thus, `return`s.
 
 #### Just, uh, return it
 
 ```javascript
 const giveMeSomething = (item) => {
   let result = item + 2;
-  return result; //when the work is done, return item + 2
+  return result; //return item + 2
 };
 ```
 
-The fundamental and regular way to make a result from the work undergone inside the function available outside the function is to `return` it. You have to be a bit careful as to where you place you're return if you have nested functions (see callbacks, below), but other than that returns are one of the smoothest and simplist aspects of JavaScript. You can also shorten the example above to `return item + 2`.
+This is the fundamental and regular way to make a result from inside a function available outside of it. You have to be a bit careful as to where you place you're return if you have nested functions (i.e. callbacks, below), but other than that, returns are one of the smoothest and simplest aspects of JavaScript. You can shorten the statements in the example above to `return item + 2`.
 
-Returns are also a neat way to escape an `if...then` chain, and only run what parts of your code you want.
+Returns are also the way to escape an `if...then` chain, and only run what parts of your code you want.
 
 #### Arrow functions and the implicit return
 
-One of the niftier uses of arrow functions is, when used in a single line, they return the resultant expression without you having to specify. Then you get something like `let myResult = (thing => thing.attribute)` or even `let myResult = x => x * x`, which returns the product of a parameter times itself without you even telling it too.
+One of the niftier uses of arrow functions is, when used in a single line, they return the resultant expression without you having to specify the keyword `return`. This can look something like `let myResult = (thing => thing.attribute)`, or even `let myResult = x => x * x`, which in this case returns the product of a parameter multiplied by itself.
 
 There are actually a number of methods with similarly built-in returns, like `.toString()` or `parseInt()` and many more. Combining these with arrow functions for the callbacks that methods like `map()` or `filter` require churns out some sweetly succinct code methods.
 
@@ -108,11 +111,15 @@ To get any significant work done in your app, it can't be just one giant functio
 
 ### What is a callback?
 
-Simply put, callbacks are functions that are passed in another function as an argument.
+Simply put, callbacks are functions that are passed in another function as an argument. Since functions in JavaScript are in and of themselves [first-class objects](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function), you can pass them into other functions.
 
 #### How do they work?
 
-As the function processes, the callback is called (or “invoked”) inside the function it has been placed in. It can be used to simplify the number of processes you want a function to take (which makes your code cleaner and cuts down on duplicate code if you do that support function more than once) or defined in-line as part of a method to specify how it's doing it's work.
+As the function processes, the callback function is called (or “invoked”) inside the function it has been placed in. You can then define the whole callback within the function to scope information, or simplify the number of processes you want it to perform by calling your callback from where it's defined outside the current function. This makes code cleaner and cuts down on duplication. 
+
+And if you think I've used the word function a lot of times, you're function function right.
+
+You can also make your callback defined in-line as part of a method to specify how it's doing it's work. Arrow functions are great for this.
 
 For example:
 
@@ -141,7 +148,7 @@ const tenOrMoreShort = (array) => array.filter((thing) => thing >= 10); //implic
 const moreOrEqualTo = (array, compareNum) =>
   array.filter((number) => number >= compareNum);
 
-//Again verbosely
+//Again verbosely:
 const moreOrEqual2 = (array, compareNum) => {
   return array.filter((number) => {
     return number >= compareNum;
@@ -164,7 +171,7 @@ const timesByTen = (array) => {
 };
 ```
 
-Needless to say, callbacks are used frequently. Especially when you're accessing data from online sources. Which leads us to...
+Needless to say, callbacks are used frequently and variously. Especially when you're accessing data from online sources. Which leads us to...
 
 ## Promises to keep, and miles to go
 
@@ -174,7 +181,7 @@ So many metaphors with promises available here. You can use your imagination. I 
 
 Essentially a type of callback, plus more. MDN defines it very succinctly as “an object representing the eventual completion or failure of an asynchronous operation.”
 
-This means that you can set up parts of code to wait to see if a prior process important to your task succeeds or fails, and act accordingly, and only act after this prior process is completed. Mostly, successful promises return a value, whereas failed ones return an error.
+This means that you can set up parts of code to wait to see if a prior process important to your task succeeds or fails, and act accordingly, and only act after this prior process is completed. Mostly, successful promises return a value and failed ones return an error.
 
 ### Promise use cases
 
@@ -195,11 +202,11 @@ const attemptAction() = new Promise((resolve, reject) =>{
 
 Promises have three states. A "pending" initial state where the promise exists but has not settled, and then it is settled by either a "fulfilled" state where the operation was complete successfully, or a "rejected" state, where things didn't go so well.
 
-Either case returns a result that you had your code waiting for instead of moving ahead before it finished, or kept your code moving on other things in the mean time.
+Either case returns a result that you had a block of your code waiting for instead of moving ahead before it finished, and/or kept your code moving on other things in the mean time.
 
 ### Special syntax: async and await
 
-Defining a lot of `new Promise`es can get pretty verbose. Thankfully, you can use an asynchronous function and the `await` keyword to smooth things out. They are a type of promise with that good syntactic sugar.
+Defining a lot of `new Promise`es can get pretty verbose. Thankfully, you can use an asynchronous function and the `await` keyword to smooth things out. They are a type of promise with some good syntactic sugar.
 
 Like-a so:
 
@@ -207,7 +214,7 @@ Like-a so:
 //
 const getStuff = async () => {
   //define the function as asynchronous here
-  return (thing = await something()); //returning the result of something
+  return thing = await something(); //returning the result of something
 };
 ```
 
@@ -233,7 +240,7 @@ async function tryCatch(URL, modifier = "", method = "GET", headers = {}) {
 }
 ```
 
-Doing it this way helps you avoid a hellscape of `.then()` chaining, catches your errors, and allows you make nice clean API calls. A truly well-rounded function that I use in my code all the time, and call within other functions using `async` and `await`. 
+Doing it this way helps you avoid a hellscape of `.then()` chaining, catches your errors, and allows you make nice clean API calls. It's a truly well-rounded function that I use in my code all the time, and call within other functions using `async` and `await`. 
 
 ```javascript
 const doTheThings = async (myFetchURL) => {
