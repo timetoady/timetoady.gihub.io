@@ -1,11 +1,11 @@
 ---
 layout: post
-title: JavaScript is Your Relationships — A Review of Functions, Callbacks, and Promises
+title: JavaScript Your Relationships — A Review of Functions, Callbacks, and Promises
 ---
 
 #### Getting the best out of JavaScript is a lot like being a good partner.
 
-![Code with Svelte](/images/functions.jpg)
+![Some JavaScript functions](/images/functions.jpg)
 
 ###### _Whoever wrote this code likes to kick their functions old school, and... JQuery-y. Photo by [Joan Gamell](https://unsplash.com/@gamell){:target="\_blank"} on [Unsplash](https://unsplash.com/photos/ZS67i1HLllo){:target="\_blank"}._
 
@@ -106,6 +106,10 @@ There are actually a number of methods with similarly built-in returns, like `.t
 And speaking of...
 
 ## Don't Leave them Hanging — Callbacks
+
+![Code with Svelte](/images/callback.jpg)
+
+###### _Yes, I like puns. So sue me. Photo by [Alexander Andrews](https://unsplash.com/@alex_andrews){:target="\_blank"} on [Unsplash](https://unsplash.com/photos/JYGnB9gTCls){:target="\_blank"}._
 
 To get any significant work done in your app, it can't be just one giant function. Much more practically, you need to break it down in manageable chunks, or use another function to get something that you want from someplace else, or mutate that data to meet your needs. Thus, callbacks.
 
