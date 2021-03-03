@@ -47,7 +47,7 @@ This is a functional expression. Unlike above, it only becomes available to be c
 
 It's also possible to chain these first two methods (i.e. `myFunction = function namedFunction(){statements})`) and MDN [notes some benefits](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions), but personally this seems like it could get confusing. You'll have to see what works best for you.
 
-### The Ol' IIFE
+#### The Ol' IIFE
 
 ```javascript
 (function () {
@@ -113,7 +113,7 @@ To get any significant work done in your app, it can't be just one giant functio
 
 Simply put, callbacks are functions that are passed in another function as an argument. Since functions in JavaScript are in and of themselves [first-class objects](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function), you can pass them into other functions.
 
-#### How do they work?
+### How do callbacks work?
 
 As the function processes, the callback function is called (or “invoked”) inside the function it has been placed in. You can then define the whole callback within the function to scope information, or simplify the number of processes you want it to perform by calling your callback from where it's defined outside the current function. This makes code cleaner and cuts down on duplication. 
 
